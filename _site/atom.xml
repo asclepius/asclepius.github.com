@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Apollo Labs</title>
+ <link href="http://apollolabs.github.com/atom.xml" rel="self"/>
+ <link href="http://apollolabs.github.com/"/>
+ <updated>2011-11-12T19:36:17-06:00</updated>
+ <id>http://apollolabs.github.com/</id>
+ <author>
+   <name>Paul Kulyk</name>
+   <email>paul.kulyk@gmail.com</email>
+ </author>
+ 
+   <entry>
+     <title>First Post</title>
+     <link href="http://apollolabs.github.com/2011/11/12/first-post/"/>
+     <updated>2011-11-12T00:00:00-06:00</updated>
+     <id>http://apollolabs.github.com/2011/11/12/first-post</id>
+     <content type="html">&lt;p&gt;Hello github.&lt;/p&gt;
+
+&lt;p&gt;This is my first post.  I&amp;rsquo;m starting a few small open source projects and thought I would try github for hosting the source code and design plans.&lt;/p&gt;
+</content>
+   </entry>
+ 
+</feed>
