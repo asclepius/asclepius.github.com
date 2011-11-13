@@ -53,12 +53,6 @@ $text2: darken($text1, 30%)
     color: $link1
     text-decoration: none
   
-    &:hover, &:focus
-      +ease-in-out
-      border-bottom-color: $fill1
-      color: $fill1
-      background: $link1
-
 // Layout
   
 html
@@ -86,26 +80,6 @@ h1
     size: 5.5em
     weight: normal  
 
-  a
-    color: $text1
-    text-decoration: none
-
-      span:after
-        color: $link1
-
-    span
-      font-size: 0.01em
-      color: $fill2
-
-      &:after
-        content: 'dot'
-        position: relative
-        bottom: 0.5em
-        padding-left: 0.25em
-        padding-right: 0.5em
-        font-size: 25em
-        color: $text1
-        
 nav > ul
   +reset-list
   position: absolute
@@ -129,10 +103,6 @@ nav > ul
         decoration: none
       color: $text1
 
-      &:hover, &:active
-        background: $link1
-        color: $fill2
-
     &:first-child:before, &:last-child:after
       content: ''
       padding:
@@ -154,9 +124,6 @@ footer > p
   a
     color: $text1
     border-color: $text1
-    
-    &:hover
-      background: $text1
     
 article
 
