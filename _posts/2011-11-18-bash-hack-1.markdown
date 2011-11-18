@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Bash Hack of the Week - METAR
 categories:
   - bash
@@ -10,10 +10,10 @@ categories:
 
 I've got a ~/bin full of cheap bash hacks I have come up with over the years and I thought this would be a good forum to start sharing them.  Some of the more complex ones I might start commiting to github.   
 
-<br>
 
 I cycle to and from work/school a lot and I like to know what the prairie winds are going to be doing.  If you know how to read metar/taf aviation weather reports it can be handy to have this information quickly available at the command line, or wrapped into a website, or in your bash prompt, etc.
-<br>
+
+
 Here's a simple script to get metar data for a given site:
 
     #!/bin/bash

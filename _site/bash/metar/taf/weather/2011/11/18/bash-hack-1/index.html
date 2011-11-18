@@ -18,13 +18,14 @@
         <li><a href="/about/">About</a></li>
       </ul>
     </nav>
-    <p>I&rsquo;ve got a ~/bin full of cheap bash hacks I have come up with over the years and I thought this would be a good forum to start sharing them.  Some of the more complex ones I might start commiting to github.   </p>
+    <article>
+  <time datetime="Fri Nov 18 00:00:00 -0600 2011">18 Nov, 2011</time>
+  <h2>Bash Hack of the Week - METAR</h2>
+  <p>I&rsquo;ve got a ~/bin full of cheap bash hacks I have come up with over the years and I thought this would be a good forum to start sharing them.  Some of the more complex ones I might start commiting to github.   </p>
 
-<p><br></p>
+<p>I cycle to and from work/school a lot and I like to know what the prairie winds are going to be doing.  If you know how to read metar/taf aviation weather reports it can be handy to have this information quickly available at the command line, or wrapped into a website, or in your bash prompt, etc.</p>
 
-<p>I cycle to and from work/school a lot and I like to know what the prairie winds are going to be doing.  If you know how to read metar/taf aviation weather reports it can be handy to have this information quickly available at the command line, or wrapped into a website, or in your bash prompt, etc.
-<br>
-Here&rsquo;s a simple script to get metar data for a given site:</p>
+<p>Here&rsquo;s a simple script to get metar data for a given site:</p>
 
 <pre><code>#!/bin/bash
 # Usage &lt;this_file&gt; &lt;4 letter airport station id&gt;
@@ -57,6 +58,23 @@ cat &gt; metar #paste and finish with ctrl-D
 </code></pre>
 
 <p>You can make another file called taf, copy the code from metar into and change the REPO line.  This will give you a forecast.</p>
+
+</article>
+<!--p>If you've read this far, you should <a href="http://twitter.com/ve5pkx">follow me</a> on Twitter.</p--!>
+<hr>
+<div id="paginator">
+  
+    <a id="left" href="/2011/11/16/thermometer/" title="Simulation Thermometer Begins">&larr; Older</a>
+  
+  
+</div>
+<hr>
+<footer>
+  <p>
+    <a href="/about/">Paul Kulyk</a>  
+  </p>
+</footer>
+
 
   </body>
 </html>
