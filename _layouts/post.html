@@ -7,6 +7,15 @@ layout: default
   <h2>{{ page.title }}</h2>
   {{ content }}
 </article>
+<hr>
+<div id="paginator">
+  {% if page.previous %}
+  <a id="left" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Older</a>
+  {% endif %}
+  {% if page.next %}
+  <a id="right" href="{{ page.next.url }}" title="{{ page.next.title }}">Newer &rarr;</a>
+  {% endif %}
+</div>
 <h3>Comments</h3>
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -22,14 +31,4 @@ var disqus_shortname = 'asclepius'; // required: replace example with your forum
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-<!--p>If you've read this far, you should <a href="http://twitter.com/ve5pkx">follow me</a> on Twitter.</p--!>
-<hr>
-<div id="paginator">
-  {% if page.previous %}
-  <a id="left" href="{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Older</a>
-  {% endif %}
-  {% if page.next %}
-  <a id="right" href="{{ page.next.url }}" title="{{ page.next.title }}">Newer &rarr;</a>
-  {% endif %}
-</div>
 {% include footer.html %}
