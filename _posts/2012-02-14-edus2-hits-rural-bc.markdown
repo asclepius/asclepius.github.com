@@ -1,6 +1,6 @@
 ---
 layout: post
-title: edus2 in rural BC - the first working clone!
+title: edus2 in rural BC - the first working clone
 ---
 
 [edus2](http://www.edus2.com) collaboration strikes again!
