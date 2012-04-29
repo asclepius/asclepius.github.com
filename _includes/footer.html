@@ -1,6 +1,37 @@
 <hr>
 <footer>
-  <p>
-    <a href="{{ base.url }}/about/">Paul Kulyk</a>  
-  </p>
+<p>
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+  new TWTR.Widget({
+    version: 2,
+    type: 'profile',
+    rpp: 4,
+    interval: 30000,
+    width: 'auto',
+    height: 300,
+    theme: {
+      shell: {
+        background: '#333333',
+        color: '#ffffff'
+      },
+      tweets: {
+        background: '#000000',
+        color: '#ffffff',
+        links: '#07d0eb'
+      }
+    },
+    features: {
+      scrollbar: false,
+      loop: false,
+      live: true,
+      behavior: 'all'
+    }
+  }).render().setUser('@ve5pkx').start();
+</script>
+</p>
+<hr>
+<p>
+<a href="{{ base.url }}/about/">Paul Kulyk</a>  
+</p>
 </footer>
