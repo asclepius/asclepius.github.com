@@ -12,7 +12,9 @@ The raspberry pi site has an excellent quick-start guide [http://www.raspberrypi
 * Raspberry Pi Model B
 * 8 GB class 10 microSD card with standard SD adapter
 * USB-based microSD card reader to write the image to
-* 
+* USB keyboard and mouse
+* HDMI cable
+* MicroUSB cable and wall power source 
 
 
 ## Installation ##
