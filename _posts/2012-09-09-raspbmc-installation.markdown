@@ -22,9 +22,9 @@ This is a post detailing the raspbmc installation and a few tweaks so that my lo
 1. Go [here](http://www.raspbmc.com/wiki/user/os-x-linux-installation/) and do what it says!
 * Essentially the important part is the following (**BE SURE OF THE DISK YOU SELECT, OR FACE THE CONSEQUENCES OF DESTROYING YOUR HARDDRIVE**): 
 
-    curl -O http://svn.stmlabs.com/svn/raspbmc/testing/installers/python/install.py
-    chmod +x install.py
-    sudo python install.py
+        curl -O http://svn.stmlabs.com/svn/raspbmc/testing/installers/python/install.py
+        chmod +x install.py
+        sudo python install.py
 
 2. I have a collection of MPEG-2 files so I purchased the additional license as detailed on the [raspberry pi site](http://www.raspberrypi.com/mpeg-2-license-key/).  Edit /boot/config and add your mpeg key there.
 
