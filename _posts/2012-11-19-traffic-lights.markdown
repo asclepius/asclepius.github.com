@@ -26,13 +26,9 @@ James explains his circuit in [this YouTube video](http://www.youtube.com/watch?
 3. We used WiringPi and WiringPi-Python for this.  They are installed on the Pi's at Greystone Heights alrady.  Google them to install on your own system!  You may need the python-dev package as well.
 
 3. Mrs. Kulyk's Makerspace Pi's should have the code installed, but it is [here]({{ site.baseurl }}/files/traffic.py) as well if needed.  Change to the directory where the file hangs out:
-        
         cd ~/src/traffic
-
 4. Run the code as root.  It needs to be root because the GPIO is access via /dev/mem, a special file that has access to all the lowlevel bits and bytes, giving everyone access would be dangerous.  The "sudo" bit means run it as root (or super user).
-
         sudo python traffic.py
-
 5.  See if you can figure out how to make the lights blink at different speeds.  Can you turn multiple lights on at a time?  Can you turn them into christmas lights instead of traffic lights?
 
 
