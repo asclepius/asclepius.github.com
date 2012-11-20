@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Raspbmc Install Notes
+title: Raspberry Pi Traffic Lights
 categories:
   - raspberrypi
   - raspbmc
