@@ -36,3 +36,11 @@ James explains his circuit in [this YouTube video](http://www.youtube.com/watch?
 5.  See if you can figure out how to make the lights blink at different speeds.  Can you turn multiple lights on at a time?  Can you turn them into christmas lights instead of traffic lights?
 
 
+
+## Tips ##
+
+* Ctrl-C will stop the program.
+* Make sure you shutdown the pi properly or you could fry the sd card. (Or corrupt the filesystem).
+* A USB key (you will need a USB hub so you can use keyboard mouse and usb stick at the same time) will allow you to take your code home!
+
+
