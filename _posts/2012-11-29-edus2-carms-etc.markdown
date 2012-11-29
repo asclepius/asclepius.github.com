@@ -9,9 +9,9 @@ categories:
 
 ## edus2 updates ##
 
-I recently joined (Saskatoon Techworks)[http://sktechworks.ca] which means... ACCESS TO 3D PRINTING!  CNC MACHINES!  AWESOME!  As well as the vast knowledgebase of the local hacker community.   With a little help from ortho resident/former professional draftsman Blair O I'm hoping to get a slick probe made up for the edus2 machine.
+I recently joined [Saskatoon Techworks](http://sktechworks.ca) which means... ACCESS TO 3D PRINTING!  CNC MACHINES!  AWESOME!  As well as the vast knowledgebase of the local hacker community.   With a little help from ortho resident/former professional draftsman Blair O I'm hoping to get a slick probe made up for the edus2 machine.
 
-Follow the blog at [www.edus2.com] for updates on this.
+Follow the [edus2 blog](www.edus2.com) for updates on this.
 
 ## CaRMS ##
 
