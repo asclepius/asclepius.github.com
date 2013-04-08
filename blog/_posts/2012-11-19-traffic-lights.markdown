@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi Traffic Lights
-categories:
+tags:
   - raspberrypi
   - raspbmc
   - wiring

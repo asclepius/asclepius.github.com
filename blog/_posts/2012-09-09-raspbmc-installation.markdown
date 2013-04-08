@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspbmc Install Notes
-categories:
+tags:
   - raspberrypi
   - raspbmc
 ---

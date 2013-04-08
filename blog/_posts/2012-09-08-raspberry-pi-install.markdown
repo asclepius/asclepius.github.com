@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raspberry Pi Install Details
-categories:
+tags:
   - raspberrypi
 ---
 This is a post detailing how we installed the Raspberry Pi software using Mac OS X Mountain Lion.

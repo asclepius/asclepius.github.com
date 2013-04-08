@@ -1,7 +1,7 @@
 ---
 layout: post
 title: edus2 website, auto-scan adder, and live-cd
-categories:
+tags:
   - ultrasound
   - edus
   - edus2

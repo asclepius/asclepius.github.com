@@ -1,7 +1,7 @@
 ---
 layout: post
 title: edus2, CaRMS, etc
-categories:
+tags:
   - CaRMS
   - edus2
   - SKTechWorks

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: omxplayer + raspbian build
-categories:
+tags:
   - RPi
+  - raspberrypi
+  - omxplayer
   - tips
 ---
 

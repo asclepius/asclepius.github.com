@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bash Hack of the Week - METAR
-categories:
+tags:
   - bash
   - metar
   - taf
