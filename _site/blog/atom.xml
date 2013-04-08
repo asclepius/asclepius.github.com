@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Paul Kulyk</title>
+ <link href="http://asclepius.github.com/blog/atom.xml" rel="self"/>
+ <link href="http://asclepius.github.com/"/>
+ <updated>2013-04-07T19:57:44-06:00</updated>
+ <id>http://asclepius.github.com/</id>
+ <author>
+   <name>Paul Kulyk</name>
+   <email>paul.kulyk@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Hello, world!</title>
+   <link href="http://asclepius.github.com/blog/2013/03/31/hello-world/"/>
+   <updated>2013-03-31T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/03/31/hello-world</id>
+   <content type="html">&lt;p&gt;Migrating to a new blog format.  Here is the first test!&lt;/p&gt;
+
+&lt;p&gt;Page is live but not yet working!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>omxplayer + raspbian build</title>
+   <link href="http://asclepius.github.com/blog/2013/02/09/omxplayer-raspbian-build/"/>
+   <updated>2013-02-09T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/02/09/omxplayer-raspbian-build</id>
+   <content type="html">&lt;p&gt;I was very impressed by the prompt response I got form the omxplayer team when asking about a windowed output feature.  Then I started trying to build from source and was having a harder time.  The Makefiles are not set up for a standard Raspbian distro.&lt;/p&gt;
+
+&lt;p&gt;Found &lt;a href=&quot;https://github.com/huceke/omxplayer/issues/73#issuecomment-12645858&quot;&gt;this&lt;/a&gt;, ffmpeg has built, now some bugs are popping up in the omxplayer source.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2, CaRMS, etc</title>
+   <link href="http://asclepius.github.com/blog/2012/11/29/edus2-carms-etc/"/>
+   <updated>2012-11-29T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/11/29/edus2-carms-etc</id>
+   <content type="html">&lt;h2&gt;edus2 updates&lt;/h2&gt;
+
+&lt;p&gt;I recently joined &lt;a href=&quot;http://sktechworks.ca&quot;&gt;Saskatoon Techworks&lt;/a&gt; which means... ACCESS TO 3D PRINTING!  CNC MACHINES!  AWESOME!  As well as the vast knowledgebase of the local hacker community.   With a little help from ortho resident/former professional draftsman Blair O I'm hoping to get a slick probe made up for the edus2 machine.&lt;/p&gt;
+
+&lt;p&gt;Follow the &lt;a href=&quot;www.edus2.com&quot;&gt;edus2 blog&lt;/a&gt; for updates on this.&lt;/p&gt;
+
+&lt;h2&gt;CaRMS&lt;/h2&gt;
+
+&lt;p&gt;The package has been delivered.  Next is interviews.  Life can resume as normal for a while and maybe I can study a bit for this upcoming licensing exam.&lt;/p&gt;
+
+&lt;h2&gt;Greystone Heights Makerspace&lt;/h2&gt;
+
+&lt;p&gt;The kids have been enjoying the blinkenlights.  Maybe its time for some robots?  Or webcams hackery?  Any involved kids/parents please come up with some suggestions for what you guys want to do.&lt;/p&gt;
+
+&lt;h2&gt;Deer hunting&lt;/h2&gt;
+
+&lt;p&gt;Success.  Antlers and all.  Venison jerky pending.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspberry Pi Traffic Lights</title>
+   <link href="http://asclepius.github.com/blog/2012/11/19/traffic-lights/"/>
+   <updated>2012-11-19T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/11/19/traffic-lights</id>
+   <content type="html">&lt;p&gt;This is a short tutorial on how to set up the Raspberry Pi to make some lights blink using the GPIO&lt;/p&gt;
+
+&lt;h2&gt;Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Configured RPi&lt;/li&gt;
+&lt;li&gt;Breadboard&lt;/li&gt;
+&lt;li&gt;3 LEDs (red, yellow, green)&lt;/li&gt;
+&lt;li&gt;Three 68 Ohm resistors&lt;/li&gt;
+&lt;li&gt;Jumper wires&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Steps&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Wire the circuit so that the three LEDs are connect on the positive side to 3.3 V then through the negative side they connect to one of the resistors, and from here to the Wiring pins 0, 1, and 2.  The pinout is detailed &lt;a href=&quot;https://projects.drogon.net/raspberry-pi/wiringpi/pins/&quot;&gt;here&lt;/a&gt; the 5V pin is the one in the corner of the header nearest the corner of the board.
+James explains his circuit in &lt;a href=&quot;http://www.youtube.com/watch?v=xcSML0CZ1L0&amp;amp;feature=share&amp;amp;list=UUFg-ZpDBtVhNa_DZg3_ElIg&quot;&gt;this YouTube video&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open a terminal (if you need help, GOOGLE!)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We used WiringPi and WiringPi-Python for this.  They are installed on the Pi's at Greystone Heights alrady.  Google them to install on your own system!  You may need the python-dev package as well.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mrs. Kulyk's Makerspace Pi's should have the code installed, but it is &lt;a href=&quot;/files/traffic.py&quot;&gt;here&lt;/a&gt; as well if needed.  Change to the directory where the file hangs out:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; cd ~/src/traffic
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run the code as root.  It needs to be root because the GPIO is access via /dev/mem, a special file that has access to all the lowlevel bits and bytes, giving everyone access would be dangerous.  The &quot;sudo&quot; bit means run it as root (or super user).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; sudo python traffic.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;See if you can figure out how to make the lights blink at different speeds.  Can you turn multiple lights on at a time?  Can you turn them into christmas lights instead of traffic lights?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;Tips&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ctrl-C will stop the program.&lt;/li&gt;
+&lt;li&gt;Make sure you shutdown the pi properly or you could fry the sd card. (Or corrupt the filesystem). Click the button in the gui to shutdown, or try &quot;sudo shutdown -h now&quot; at the command line.&lt;/li&gt;
+&lt;li&gt;A USB key (you will need a USB hub so you can use keyboard mouse and usb stick at the same time) will allow you to take your code home!&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspbmc Install Notes</title>
+   <link href="http://asclepius.github.com/blog/2012/09/09/raspbmc-installation/"/>
+   <updated>2012-09-09T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/09/09/raspbmc-installation</id>
+   <content type="html">&lt;p&gt;This is a post detailing the raspbmc installation and a few tweaks so that my lovely wife can set up a few more at her school.&lt;/p&gt;
+
+&lt;h2&gt;Equipment Used&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Model B&lt;/li&gt;
+&lt;li&gt;8 GB class 10 microSD card with standard SD adapter&lt;/li&gt;
+&lt;li&gt;USB-based microSD card reader to write the image to&lt;/li&gt;
+&lt;li&gt;USB keyboard and mouse&lt;/li&gt;
+&lt;li&gt;HDMI cable&lt;/li&gt;
+&lt;li&gt;MicroUSB cable and wall power source&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go &lt;a href=&quot;http://www.raspbmc.com/wiki/user/os-x-linux-installation/&quot;&gt;here&lt;/a&gt; and do what it says!&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Essentially the important part is the following (&lt;strong&gt;BE SURE OF THE DISK YOU SELECT, OR FACE THE CONSEQUENCES OF DESTROYING YOUR HARDDRIVE&lt;/strong&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  curl -O http://svn.stmlabs.com/svn/raspbmc/testing/installers/python/install.py
+  chmod +x install.py
+  sudo python install.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I have a collection of MPEG-2 files so I purchased the additional license as detailed on the &lt;a href=&quot;http://www.raspberrypi.com/mpeg-2-license-key/&quot;&gt;raspberry pi site&lt;/a&gt;.  Edit /boot/config and add your mpeg key there.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I could not get any deinterlacing to work on the pi so I decided to set the output resolution to 1080i.  For some reason Raspbmc would not let me do this, to solve it I edited the config.txt file to manually set the resolution.  Details on this file can be found &lt;a href=&quot;http://elinux.org/RPi_config.txt&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;Hardware setup&lt;/h2&gt;
+
+&lt;p&gt;I have a TV with a USB port for playing files from a disk.  Conveniently, this port supplies enough power to run the Pi!  So no power source is needed just a micro USB cable.&lt;/p&gt;
+
+&lt;p&gt;Additionally I have samba storage on the network and use this.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspberry Pi Install Details</title>
+   <link href="http://asclepius.github.com/blog/2012/09/08/raspberry-pi-install/"/>
+   <updated>2012-09-08T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/09/08/raspberry-pi-install</id>
+   <content type="html">&lt;p&gt;This is a post detailing how we installed the Raspberry Pi software using Mac OS X Mountain Lion.
+The raspberry pi site has an excellent quick-start guide [http://www.raspberrypi.org/quick-start-guide].&lt;/p&gt;
+
+&lt;h2&gt;Equipment Used&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Model B&lt;/li&gt;
+&lt;li&gt;8 GB class 10 microSD card with standard SD adapter&lt;/li&gt;
+&lt;li&gt;USB-based microSD card reader to write the image to&lt;/li&gt;
+&lt;li&gt;USB keyboard and mouse&lt;/li&gt;
+&lt;li&gt;HDMI cable&lt;/li&gt;
+&lt;li&gt;MicroUSB cable and wall power source&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Download an install image, we used Raspbian &quot;wheezy&quot; from &lt;a href=&quot;http://www.raspberrypi.org/downloads&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various options for loading the SD card are given &lt;a href=&quot;http://elinux.org/RPi_Easy_SD_Card_Setup&quot;&gt;here&lt;/a&gt;.  We unzipped the imaged and used dd to install it as they describe for Mac OS X.&lt;/li&gt;
+&lt;li&gt;Put the card into the Pi&lt;/li&gt;
+&lt;li&gt;Connect HDMI, power, ethernet, keyboard, and mouse&lt;/li&gt;
+&lt;li&gt;Plug it in, HDMI did not work initially.&lt;/li&gt;
+&lt;li&gt;SSH into the box with username: pi, password: raspberry (for raspbian wheezy)&lt;/li&gt;
+&lt;li&gt;Run the following command:
+sudo raspi-config&lt;/li&gt;
+&lt;li&gt;In raspi-config you can set up all the options as you like.  Change to a US keyboard layout for US/Canada. (I select generic 105, then &quot;Other&quot; then &quot;English (US)&quot;.  If you have a big SD card make sure you expand the file system to utilize this.&lt;/li&gt;
+&lt;li&gt;After the ssh setup the HDMI worked fine.  Not sure why it did not work initially.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2 website updates</title>
+   <link href="http://asclepius.github.com/blog/2012/04/28/vanity-header-website-updates/"/>
+   <updated>2012-04-28T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/04/28/vanity-header-website-updates</id>
+   <content type="html">&lt;p&gt;I have been furiously updating &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; in anticipation of the trip to the SAEM AGM in Chicago. A new twitter account &lt;a href=&quot;http://www.twitter.com/edus2sim&quot;&gt;edus2sim&lt;/a&gt; has been created specifically for edus2 updates.  The blog and website format have been heavily updated.&lt;/p&gt;
+
+&lt;p&gt;In addition I have started dragging in some of the changes to that site over to this one as well.  Hopefully I can start creating a nice resume with all these things for the upcoming CaRMS showdown.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2 in rural BC - the first working clone</title>
+   <link href="http://asclepius.github.com/blog/2012/02/14/edus2-hits-rural-bc/"/>
+   <updated>2012-02-14T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/02/14/edus2-hits-rural-bc</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; collaboration strikes again!&lt;/p&gt;
+
+&lt;p&gt;Jel Coward, an MD with a keen interest in open source projects, and his team have created their own working edus2 machine.  This is the first confirmed replication of the project and a significant milestone for is.&lt;/p&gt;
+
+&lt;p&gt;With this we found a few bugs.  He installed it on an earlier version of Ubuntu and had to tweak a few things to work.  None-the-less the system is up and running.&lt;/p&gt;
+
+&lt;p&gt;These changes will be integrated into the git repository under a separate branch in case anyone else is interested in running on an older version of Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;All the hiccups encountered could go away if we had someone with a bit of free time and an interest in the project could package the program for Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;Outstanding &lt;a href=&quot;https://github.com/asclepius/edus2/issues&quot;&gt;issues&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Probe design&lt;/li&gt;
+&lt;li&gt;Ubuntu packages&lt;/li&gt;
+&lt;li&gt;Automatic card setup software&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;Anyone interested please contact me, or just go the &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; and get started by forking the project.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2 wiki updates, probe design</title>
+   <link href="http://asclepius.github.com/blog/2012/02/01/edus2-wiki-and-hardware/"/>
+   <updated>2012-02-01T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/02/01/edus2-wiki-and-hardware</id>
+   <content type="html">&lt;p&gt;The &lt;a href=&quot;https://github.com/asclepius/edus2/wiki&quot; title=&quot;github: edus2 wiki&quot;&gt;edus2 wiki&lt;/a&gt; underwent a lot of changes over the weekend.  A set of step-by-step instructions has been added to the &lt;a href=&quot;https://github.com/asclepius/edus2/wiki/Installation&quot;&gt;Installation&lt;/a&gt; page.  Anyone that has some experience with the command line should have no problem with it.&lt;/p&gt;
+
+&lt;p&gt;The weak link with the system right now is making a nice-looking probe.  My colleague/friend/cousin Erik Kulyk has decided to help out with the project and is looking in to a professionally fabricated probe.&lt;/p&gt;
+
+&lt;p&gt;The outstanding &lt;a href=&quot;https://github.com/asclepius/edus2/issues&quot;&gt;Issues&lt;/a&gt; now include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Probe design&lt;/li&gt;
+&lt;li&gt;Automation of the initial setup process&lt;/li&gt;
+&lt;li&gt;Ubuntu package for quick installation&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2 website, auto-scan adder, and live-cd</title>
+   <link href="http://asclepius.github.com/blog/2012/01/11/edus2-website/"/>
+   <updated>2012-01-11T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/01/11/edus2-website</id>
+   <content type="html">&lt;p&gt;The &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2 website&lt;/a&gt; has come a long way.  The basic format is now intact and all that remains are some touch ups and adding photos and video demonstration of the system.&lt;/p&gt;
+
+&lt;p&gt;The next step is to finish the system for automatically prompting the user to scan a tag for each video in a given folder.  Once this is done the automation process will make setup a lot more user friendly.&lt;/p&gt;
+
+&lt;p&gt;After the quick-setup feature is finished the whole thing will be bundled into a linux distribution that will simply boot to the running program.  Once this is put together the user can simply download and burn the iso, insert the disk, and install the system.  It removes the hassle of adding python packages and setting up software.  The laptop will most likely be dedicated to the lab so no issues with dual booting will be required.&lt;/p&gt;
+
+&lt;p&gt;If anyone want to get involved with an open source project and package this up for Ubuntu that would be appreciated as well!&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
