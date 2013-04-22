@@ -4,6 +4,7 @@ title: CaRMS reflections
 tags:
   - CaRMS
   - rants
+  - medicine
 ---
 
 Having just finished the CaRMS process I had some time to reflect on my successes and mistakes. Here are some of the rules I wish I had followed.
