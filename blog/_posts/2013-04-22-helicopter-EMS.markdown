@@ -23,6 +23,9 @@ The search results as of 22 April 2013 are [here](/images/citation-2013-04-22.pd
  
 Galvagno et al concluded that outcomes were improved, however the following JAMA issue had many letters to the editor outlining flaws in how missing data points were dealt with among other study design flaws.  The majority of the articles seem to conclude little mortality benefit though some showed benefit in specific subpopulations.
 
+The Trauma Professional's [blog](http://regionstraumapro.com/post/24608428975) reviews an article that did nto show up on medline ([Reduced mortality in injured adults transported by helicopter emergency medical services](http://www.ncbi.nlm.nih.gov/pubmed/21524205)).  Again the study shows a strictly defined population to benefit.
+
 Of course, these studies were not done in our unique prairie environment.  STARS is used for transporting hospital to hospital as well as for trauma.  I don't know what the requirements are for the EMS to get to the chopper but I am interested to find out.  Once the LMCC is out of the way, maybe I can do some more reading on the topic.
+
 
 If you have articles for or against improved trauma outcomes please comment below.
