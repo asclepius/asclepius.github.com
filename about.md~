@@ -4,7 +4,7 @@ layout: default
 title: About - Paul Kulyk Dot Com
 ---
 
-<img style="float:right" src="{{ site.url }}/images/kulyk_floating10.png" >
+<img style="float:right" src="{{ site.baseurl }}/images/kulyk_floating10.png" >
 
 # About
 
