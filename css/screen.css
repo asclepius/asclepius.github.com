@@ -23,7 +23,7 @@ body {
   width: 40em;
   margin-left: auto;
   margin-right: auto;
-	font-family: Helvetica, "Trebuchet MS", Arial sans-serif;
+	font-family:  Helvetica bold, "Trebuchet MS", Arial sans-serif;
   font-size-adjust: none;
   font-style: normal;
   font-variant: normal;
@@ -36,7 +36,7 @@ p {
 }
 
 a {
-  color: #268ED4;
+  color: #168ED4;
   text-decoration: none;
 }
 
@@ -131,7 +131,11 @@ a.core-nav:hover {
 #content {
   border-top: 1px solid #999;
   padding-top: 1em;
-  font-size: small;
+  font-size: medium;
+}
+
+#content h1 {
+  font-size: 300%;
 }
 
 #content h2, #content h3 {
@@ -239,7 +243,7 @@ ul.posts li {
 }
 
 ul.posts .title {
-  font-size: 120%;
+  font-size: 190%;
 }
 
 #related-posts .posts {

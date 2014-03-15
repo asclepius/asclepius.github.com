@@ -4,13 +4,79 @@
  <title>Paul Kulyk</title>
  <link href="http://asclepius.github.com/blog/atom.xml" rel="self"/>
  <link href="http://asclepius.github.com/"/>
- <updated>2013-04-22T09:50:25-06:00</updated>
+ <updated>2014-03-14T19:40:37-06:00</updated>
  <id>http://asclepius.github.com/</id>
  <author>
    <name>Paul Kulyk</name>
    <email>paul.kulyk@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Tipping Bucket Rain Gauge - Part 1</title>
+   <link href="http://asclepius.github.com/blog/2013/06/30/tipping-bucket-raingauge/"/>
+   <updated>2013-06-30T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/06/30/tipping-bucket-raingauge</id>
+   <content type="html">&lt;p&gt;I currently have a Raspberry Pi set up to drive my lawn sprinklers using &lt;a href=&quot;http://rayshobby.net/mediawiki/index.php?title=OpenSprinkler_Pi&quot;&gt;an OpenSprinkler Pi&lt;/a&gt; system.
+I wrote some basic scripts to check the weather and decide whether or not it would be a good idea to water the lawn that day.  However, the weather reported does not always match what is experienced for the whole city so I decided to set up my own rain gauge.&lt;/p&gt;
+
+&lt;h3&gt;Parts list&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.thingiverse.com/thing:85045&quot;&gt;Tipping bucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rod threaded on one end (something like this &lt;a href=&quot;http://www.hobbyking.com/hobbyking/store/__34929__super_scout_w_camera_1400mm_replacement_aileron_control_rod_set.html&quot;&gt;aileron control rod&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Nuts to fit rod&lt;/li&gt;
+&lt;li&gt;Teflon washers to space things out&lt;/li&gt;
+&lt;li&gt;Rare earth magnet&lt;/li&gt;
+&lt;li&gt;Reed switch&lt;/li&gt;
+&lt;li&gt;Some sort of electronics setup, like and arduino that can compute your rainfall&lt;/li&gt;
+&lt;li&gt;CD spindle (50+ cd count) to house things and keep them dry&lt;/li&gt;
+&lt;li&gt;A funnel&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I got items 2, 3, and 4 at hobbyworld in Saskatoon.  5, 6, and 9 were donated by srw7, a friend from the local hackerspace.  I had an arduino around for 7.  And I found a funnel in the kitchen that hasn&#39;t been missed... yet.&lt;/p&gt;
+
+&lt;h3&gt;Step 1 - Print the part&lt;/h3&gt;
+
+&lt;p&gt;Get out your 3D printer and let loose some plastic.  The part is &lt;a href=&quot;http://www.thingiverse.com/thing:85045&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is what it looks like printed.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/59175237@N00/9177600248/&quot; title=&quot;Untitled by _apollo_, on Flickr&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3807/9177600248_04414d385d.jpg&quot; width=&quot;500&quot; height=&quot;375&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Step 2 - Epoxy the magnet to the bucket&lt;/h3&gt;
+
+&lt;p&gt;The location depends on where you will get the best read.  You can put it at the top and have it count every tip back and forth.  Or put it at one end and have a back and forth tip count as 1 in your math.&lt;/p&gt;
+
+&lt;h3&gt;Step 3 - Find and modify a container&lt;/h3&gt;
+
+&lt;p&gt;I ended up using an empty 50-CD spindle.  The black spindle itself was drilled and used to mount the bucket and reed switch.  The lid was used for weather proofing with a hole drilled in to mount the funnel through.&lt;/p&gt;
+
+&lt;p&gt;Pic of drilled spindle.&lt;/p&gt;
+
+&lt;p&gt;Pic of drilled lid.&lt;/p&gt;
+
+&lt;h3&gt;Step 4 - Contruct the mechanical parts&lt;/h3&gt;
+
+&lt;p&gt;Bend and cut rod to fit bucket, use teflon washers to space things appropriately.  Use the nuts to fix the rod to the spindle.  Epoxy the funnel in place.&lt;/p&gt;
+
+&lt;p&gt;Pics of above.&lt;/p&gt;
+
+&lt;p&gt;Test with water!&lt;/p&gt;
+
+&lt;p&gt;Video of test.&lt;/p&gt;
+
+&lt;h3&gt;Step 5 - Connect electronics&lt;/h3&gt;
+
+&lt;p&gt;This is a work in progress, currently have an arduino connect to count tips and calculate rainfall.&lt;/p&gt;
+
+&lt;p&gt;The formula used is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rainfall = number_of_tips * volume_per_tip / collecting_area_of_funnel
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Evidence for Mortality Benefit of Helicopter EMS</title>
@@ -30,13 +96,13 @@
 &lt;/ol&gt;
 
 
-&lt;p&gt;The search results as of 22 April 2013 are &lt;a href=&quot;/images/citation-2013-04-22.pdf&quot;&gt;here&lt;/a&gt;, this pdf will let UofS users link directly to the articles, others will have to look them up through their own institution's library.&lt;/p&gt;
+&lt;p&gt;The search results as of 22 April 2013 are &lt;a href=&quot;/images/citation-2013-04-22.pdf&quot;&gt;here&lt;/a&gt;, this pdf will let UofS users link directly to the articles, others will have to look them up through their own institution&#39;s library.&lt;/p&gt;
 
 &lt;p&gt;Galvagno et al concluded that outcomes were improved, however the following JAMA issue had many letters to the editor outlining flaws in how missing data points were dealt with among other study design flaws.  The majority of the articles seem to conclude little mortality benefit though some showed benefit in specific subpopulations.&lt;/p&gt;
 
-&lt;p&gt;The Trauma Professional's &lt;a href=&quot;http://regionstraumapro.com/post/24608428975&quot;&gt;blog&lt;/a&gt; reviews an article that did nto show up on medline (&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/21524205&quot;&gt;Reduced mortality in injured adults transported by helicopter emergency medical services&lt;/a&gt;).  Again the study shows a strictly defined population to benefit.&lt;/p&gt;
+&lt;p&gt;The Trauma Professional&#39;s &lt;a href=&quot;http://regionstraumapro.com/post/24608428975&quot;&gt;blog&lt;/a&gt; reviews an article that did nto show up on medline (&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/21524205&quot;&gt;Reduced mortality in injured adults transported by helicopter emergency medical services&lt;/a&gt;).  Again the study shows a strictly defined population to benefit.&lt;/p&gt;
 
-&lt;p&gt;Of course, these studies were not done in our unique prairie environment.  STARS is used for transporting hospital to hospital as well as for trauma.  I don't know what the requirements are for the EMS to get to the chopper but I am interested to find out.  Once the LMCC is out of the way, maybe I can do some more reading on the topic.&lt;/p&gt;
+&lt;p&gt;Of course, these studies were not done in our unique prairie environment.  STARS is used for transporting hospital to hospital as well as for trauma.  I don&#39;t know what the requirements are for the EMS to get to the chopper but I am interested to find out.  Once the LMCC is out of the way, maybe I can do some more reading on the topic.&lt;/p&gt;
 
 &lt;p&gt;If you have articles for or against improved trauma outcomes please comment below.&lt;/p&gt;
 </content>
@@ -55,7 +121,7 @@
 
 &lt;h3&gt;Do electives in lots of different places that you might want to go to&lt;/h3&gt;
 
-&lt;p&gt;You can meet the staff and residents at your local program when doing your core rotations or medical or surgical &lt;em&gt;S&lt;/em&gt;electives (with an &quot;S&quot;). Elective are the only opportunity you have to go to other programs and show them how awesome you are at specialty X and how cool of a dude you would be to have around for the next 2-6 years. On our CaRMS tour one program director actually said: &quot;If we haven't had you at our location we will likely rank you behind those who have been here. From our perspective, the devil you know is better than the one you don't.&quot;&lt;/p&gt;
+&lt;p&gt;You can meet the staff and residents at your local program when doing your core rotations or medical or surgical &lt;em&gt;S&lt;/em&gt;electives (with an &quot;S&quot;). Elective are the only opportunity you have to go to other programs and show them how awesome you are at specialty X and how cool of a dude you would be to have around for the next 2-6 years. On our CaRMS tour one program director actually said: &quot;If we haven&#39;t had you at our location we will likely rank you behind those who have been here. From our perspective, the devil you know is better than the one you don&#39;t.&quot;&lt;/p&gt;
 
 &lt;p&gt;My mistakes so far:&lt;/p&gt;
 
@@ -73,15 +139,15 @@
 
 &lt;p&gt;Not just from your choice discipline, but from any rotation on where you have impressed the faculty. At your local institution be sure that staff in different departments will talk to each other about your performance so even just working hard might make the difference.&lt;/p&gt;
 
-&lt;p&gt;If you decide on what you will be applying for before your second elective block (which many people do) it doesn't hurt to have generic letters from many source to choose from when applying. If you decide to pursue one of these specialties later you could tell the staff how your time with them influenced them to change careers and ask if they could please write you a discipline-specific letter.&lt;/p&gt;
+&lt;p&gt;If you decide on what you will be applying for before your second elective block (which many people do) it doesn&#39;t hurt to have generic letters from many source to choose from when applying. If you decide to pursue one of these specialties later you could tell the staff how your time with them influenced them to change careers and ask if they could please write you a discipline-specific letter.&lt;/p&gt;
 
-&lt;p&gt;People do change their mind. More letters is never worse. Ask! Lots! The worst that can happen is they can say no. A caveat here would be to ask from people you think you have impressed.  Also, put the qualifier “strong” in front of letter.  If they can't write you a strong one don't bother, but have the discussion.  CaRMS cover letter stuff doesn't open early (I think there may have been some trouble with the early letter system our year), but you can always drop off a resume with staff and along with a log of some of the memorable experiences you had with them so that when your CaRMS account goes live they will be prepared to submit something.&lt;/p&gt;
+&lt;p&gt;People do change their mind. More letters is never worse. Ask! Lots! The worst that can happen is they can say no. A caveat here would be to ask from people you think you have impressed.  Also, put the qualifier “strong” in front of letter.  If they can&#39;t write you a strong one don&#39;t bother, but have the discussion.  CaRMS cover letter stuff doesn&#39;t open early (I think there may have been some trouble with the early letter system our year), but you can always drop off a resume with staff and along with a log of some of the memorable experiences you had with them so that when your CaRMS account goes live they will be prepared to submit something.&lt;/p&gt;
 
-&lt;p&gt;The other thing about working hard is that the residents who will be working with you want to know this as well! They don't get to make the program rank order list but it doesn't hurt for them to like you. Also, there is a fine line between being smart in front of a surgeon and stepping on a resident’s toes. Tread cautiously when dropping sweet knowledge that the resident didn't happen to remember at the time.&lt;/p&gt;
+&lt;p&gt;The other thing about working hard is that the residents who will be working with you want to know this as well! They don&#39;t get to make the program rank order list but it doesn&#39;t hurt for them to like you. Also, there is a fine line between being smart in front of a surgeon and stepping on a resident’s toes. Tread cautiously when dropping sweet knowledge that the resident didn&#39;t happen to remember at the time.&lt;/p&gt;
 
 &lt;h3&gt;Results&lt;/h3&gt;
 
-&lt;p&gt;I didn't get interviews everywhere in the country this year, but I managed to match to what I wanted: the University of Saskatchewan Orthopaedic Surgery program. I'm very happy with how things ended up, but a lot of CaRMS still seems like a mystery. Set yourself up for success and learn from what others tell you. Comment or questions below.&lt;/p&gt;
+&lt;p&gt;I didn&#39;t get interviews everywhere in the country this year, but I managed to match to what I wanted: the University of Saskatchewan Orthopaedic Surgery program. I&#39;m very happy with how things ended up, but a lot of CaRMS still seems like a mystery. Set yourself up for success and learn from what others tell you. Comment or questions below.&lt;/p&gt;
 
 &lt;p&gt;Thanks to &lt;a href=&quot;http://boringem.org&quot;&gt;@BoringEM&lt;/a&gt; for reviewing.&lt;/p&gt;
 </content>
@@ -105,7 +171,7 @@
    <id>http://asclepius.github.com/blog/2012/11/29/edus2-carms-etc</id>
    <content type="html">&lt;h2&gt;edus2 updates&lt;/h2&gt;
 
-&lt;p&gt;I recently joined &lt;a href=&quot;http://sktechworks.ca&quot;&gt;Saskatoon Techworks&lt;/a&gt; which means... ACCESS TO 3D PRINTING!  CNC MACHINES!  AWESOME!  As well as the vast knowledgebase of the local hacker community.   With a little help from ortho resident/former professional draftsman Blair O I'm hoping to get a slick probe made up for the edus2 machine.&lt;/p&gt;
+&lt;p&gt;I recently joined &lt;a href=&quot;http://sktechworks.ca&quot;&gt;Saskatoon Techworks&lt;/a&gt; which means... ACCESS TO 3D PRINTING!  CNC MACHINES!  AWESOME!  As well as the vast knowledgebase of the local hacker community.   With a little help from ortho resident/former professional draftsman Blair O I&#39;m hoping to get a slick probe made up for the edus2 machine.&lt;/p&gt;
 
 &lt;p&gt;Follow the &lt;a href=&quot;www.edus2.com&quot;&gt;edus2 blog&lt;/a&gt; for updates on this.&lt;/p&gt;
 
@@ -147,8 +213,8 @@
 &lt;li&gt;&lt;p&gt;Wire the circuit so that the three LEDs are connect on the positive side to 3.3 V then through the negative side they connect to one of the resistors, and from here to the Wiring pins 0, 1, and 2.  The pinout is detailed &lt;a href=&quot;https://projects.drogon.net/raspberry-pi/wiringpi/pins/&quot;&gt;here&lt;/a&gt; the 5V pin is the one in the corner of the header nearest the corner of the board.
 James explains his circuit in &lt;a href=&quot;http://www.youtube.com/watch?v=xcSML0CZ1L0&amp;amp;feature=share&amp;amp;list=UUFg-ZpDBtVhNa_DZg3_ElIg&quot;&gt;this YouTube video&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Open a terminal (if you need help, GOOGLE!)&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;We used WiringPi and WiringPi-Python for this.  They are installed on the Pi's at Greystone Heights alrady.  Google them to install on your own system!  You may need the python-dev package as well.&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Mrs. Kulyk's Makerspace Pi's should have the code installed, but it is &lt;a href=&quot;/files/traffic.py&quot;&gt;here&lt;/a&gt; as well if needed.  Change to the directory where the file hangs out:&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;We used WiringPi and WiringPi-Python for this.  They are installed on the Pi&#39;s at Greystone Heights alrady.  Google them to install on your own system!  You may need the python-dev package as well.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mrs. Kulyk&#39;s Makerspace Pi&#39;s should have the code installed, but it is &lt;a href=&quot;//files/traffic.py&quot;&gt;here&lt;/a&gt; as well if needed.  Change to the directory where the file hangs out:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt; cd ~/src/traffic
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
@@ -287,26 +353,6 @@ sudo raspi-config&lt;/li&gt;
 
 
 &lt;p&gt;Anyone interested please contact me, or just go the &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; and get started by forking the project.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>edus2 wiki updates, probe design</title>
-   <link href="http://asclepius.github.com/blog/2012/02/01/edus2-wiki-and-hardware/"/>
-   <updated>2012-02-01T00:00:00-06:00</updated>
-   <id>http://asclepius.github.com/blog/2012/02/01/edus2-wiki-and-hardware</id>
-   <content type="html">&lt;p&gt;The &lt;a href=&quot;https://github.com/asclepius/edus2/wiki&quot; title=&quot;github: edus2 wiki&quot;&gt;edus2 wiki&lt;/a&gt; underwent a lot of changes over the weekend.  A set of step-by-step instructions has been added to the &lt;a href=&quot;https://github.com/asclepius/edus2/wiki/Installation&quot;&gt;Installation&lt;/a&gt; page.  Anyone that has some experience with the command line should have no problem with it.&lt;/p&gt;
-
-&lt;p&gt;The weak link with the system right now is making a nice-looking probe.  My colleague/friend/cousin Erik Kulyk has decided to help out with the project and is looking in to a professionally fabricated probe.&lt;/p&gt;
-
-&lt;p&gt;The outstanding &lt;a href=&quot;https://github.com/asclepius/edus2/issues&quot;&gt;Issues&lt;/a&gt; now include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Probe design&lt;/li&gt;
-&lt;li&gt;Automation of the initial setup process&lt;/li&gt;
-&lt;li&gt;Ubuntu package for quick installation&lt;/li&gt;
-&lt;/ul&gt;
-
 </content>
  </entry>
  

@@ -41,22 +41,7 @@
     <li>
       <a class="core-nav icon-info-2" href="/about.html" title="Paul Kulyk - About"></a>
     </li>
-    <li>
-      <a class="core-nav icon-search" id="search-icon" href="#" title="Search asclepius.github.com"></a>
-    </li>
   </ul>
-  <div style="clear:both"></div>
-  <div id="search">
-    <form action="http://www.google.com/cse" id="cse-search-box" style="display:none;">
-      <div>
-        <input type="hidden" name="cx" value="001652393842387460493:oof-xpbgn7y" />
-        <input type="hidden" name="ie" value="UTF-8" />
-        <input type="text" name="q" width="100%"/>
-        <input type="submit" name="sa" value="Search" />
-      </div>
-    </form>
-    <script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-  </div>
 </div>
 <div style="clear:both"></div>
 <div id="content">
@@ -65,61 +50,97 @@
 
 
 <div id="post">
-  <h1><a href="/blog/2013/04/22/helicopter-EMS/" title="Evidence for Mortality Benefit of Helicopter EMS">Evidence for Mortality Benefit of Helicopter EMS</a></h1>
+  <h1><a href="/blog/2013/06/30/tipping-bucket-raingauge/" title="Tipping Bucket Rain Gauge - Part 1">Tipping Bucket Rain Gauge - Part 1</a></h1>
 
   
     <span class="published_on">
-      Published on Monday, April 22, 2013
+      Published on Sunday, June 30, 2013
 
       
         in
         
           
-          <a href="#" class="tag">helicopter ems</a>, 
+          <a href="/tag/tipping bucket" class="tag">tipping bucket</a>, 
         
           
-          <a href="#" class="tag">emergency medical services</a>, 
+          <a href="/tag/rain gauge" class="tag">rain gauge</a>, 
         
           
-          <a href="#" class="tag">ems</a>, 
+          <a href="/tag/DIY" class="tag">diy</a>, 
         
           
-          <a href="#" class="tag">ebm</a>, 
+          <a href="/tag/hacks" class="tag">hacks</a>, 
         
            and 
-          <a href="#" class="tag">medicine</a>
+          <a href="/tag/3D printer" class="tag">3d printer</a>
         
       
      </span>
    
 
-  <p>I heard a couple of guys talking in a coffee shop the other day about STARS.  It got me thinking about how expensive this is and wondering if there is any strong evidence that it makes a difference.</p>
+  <p>I currently have a Raspberry Pi set up to drive my lawn sprinklers using <a href="http://rayshobby.net/mediawiki/index.php?title=OpenSprinkler_Pi">an OpenSprinkler Pi</a> system.
+I wrote some basic scripts to check the weather and decide whether or not it would be a good idea to water the lawn that day.  However, the weather reported does not always match what is experienced for the whole city so I decided to set up my own rain gauge.</p>
 
-<p>As I am entering a career in orthopaedic surgery, I was most interested in trauma outcomes.  My medline search was as follows:</p>
+<h3>Parts list</h3>
 
 <ol>
-<li>*Emergency Medical Services/ or *Air Ambulances/ (22208)</li>
-<li>*"Wounds and Injuries"/mo [Mortality] (2132)</li>
-<li>1 and 2 (148)</li>
-<li>helicopter.mp. (1933)</li>
-<li>3 and 4 (30)</li>
+<li><a href="http://www.thingiverse.com/thing:85045">Tipping bucket</a></li>
+<li>Rod threaded on one end (something like this <a href="http://www.hobbyking.com/hobbyking/store/__34929__super_scout_w_camera_1400mm_replacement_aileron_control_rod_set.html">aileron control rod</a>)</li>
+<li>Nuts to fit rod</li>
+<li>Teflon washers to space things out</li>
+<li>Rare earth magnet</li>
+<li>Reed switch</li>
+<li>Some sort of electronics setup, like and arduino that can compute your rainfall</li>
+<li>CD spindle (50+ cd count) to house things and keep them dry</li>
+<li>A funnel</li>
 </ol>
 
 
-<p>The search results as of 22 April 2013 are <a href="/images/citation-2013-04-22.pdf">here</a>, this pdf will let UofS users link directly to the articles, others will have to look them up through their own institution's library.</p>
+<p>I got items 2, 3, and 4 at hobbyworld in Saskatoon.  5, 6, and 9 were donated by srw7, a friend from the local hackerspace.  I had an arduino around for 7.  And I found a funnel in the kitchen that hasn't been missed... yet.</p>
 
-<p>Galvagno et al concluded that outcomes were improved, however the following JAMA issue had many letters to the editor outlining flaws in how missing data points were dealt with among other study design flaws.  The majority of the articles seem to conclude little mortality benefit though some showed benefit in specific subpopulations.</p>
+<h3>Step 1 - Print the part</h3>
 
-<p>The Trauma Professional's <a href="http://regionstraumapro.com/post/24608428975">blog</a> reviews an article that did nto show up on medline (<a href="http://www.ncbi.nlm.nih.gov/pubmed/21524205">Reduced mortality in injured adults transported by helicopter emergency medical services</a>).  Again the study shows a strictly defined population to benefit.</p>
+<p>Get out your 3D printer and let loose some plastic.  The part is <a href="http://www.thingiverse.com/thing:85045">here</a>.</p>
 
-<p>Of course, these studies were not done in our unique prairie environment.  STARS is used for transporting hospital to hospital as well as for trauma.  I don't know what the requirements are for the EMS to get to the chopper but I am interested to find out.  Once the LMCC is out of the way, maybe I can do some more reading on the topic.</p>
+<p>Here is what it looks like printed.</p>
 
-<p>If you have articles for or against improved trauma outcomes please comment below.</p>
+<p><a href="http://www.flickr.com/photos/59175237@N00/9177600248/" title="Untitled by _apollo_, on Flickr"><img src="http://farm4.staticflickr.com/3807/9177600248_04414d385d.jpg" width="500" height="375" alt="Untitled"></a></p>
+
+<h3>Step 2 - Epoxy the magnet to the bucket</h3>
+
+<p>The location depends on where you will get the best read.  You can put it at the top and have it count every tip back and forth.  Or put it at one end and have a back and forth tip count as 1 in your math.</p>
+
+<h3>Step 3 - Find and modify a container</h3>
+
+<p>I ended up using an empty 50-CD spindle.  The black spindle itself was drilled and used to mount the bucket and reed switch.  The lid was used for weather proofing with a hole drilled in to mount the funnel through.</p>
+
+<p>Pic of drilled spindle.</p>
+
+<p>Pic of drilled lid.</p>
+
+<h3>Step 4 - Contruct the mechanical parts</h3>
+
+<p>Bend and cut rod to fit bucket, use teflon washers to space things appropriately.  Use the nuts to fix the rod to the spindle.  Epoxy the funnel in place.</p>
+
+<p>Pics of above.</p>
+
+<p>Test with water!</p>
+
+<p>Video of test.</p>
+
+<h3>Step 5 - Connect electronics</h3>
+
+<p>This is a work in progress, currently have an arduino connect to count tips and calculate rainfall.</p>
+
+<p>The formula used is</p>
+
+<pre><code>rainfall = number_of_tips * volume_per_tip / collecting_area_of_funnel
+</code></pre>
 
 
   <div class="post-footer">
-    <a href="/blog/2013/04/22/helicopter-EMS/" title="Evidence for Mortality Benefit of Helicopter EMS">permalink</a> |
-    <a href="/blog/2013/04/22/helicopter-EMS/#comments" title="Evidence for Mortality Benefit of Helicopter EMS -- Comments">comments</a> | 
+    <a href="/blog/2013/06/30/tipping-bucket-raingauge/" title="Tipping Bucket Rain Gauge - Part 1">permalink</a> |
+    <a href="/blog/2013/06/30/tipping-bucket-raingauge/#comments" title="Tipping Bucket Rain Gauge - Part 1 -- Comments">comments</a> | 
     <a href="http://feeds.feedburner.com/paulkulyk" title="Paul Kulyk - Atom/RSS Feed">subscribe</a>
   </div>
 </div>
@@ -127,10 +148,18 @@
 <div id="archive">
   <h1><a name="archive" href="#archive" title="Blog Archive">Archive</a></h1>
 
-  <p>Now that you've whetted your appetite with the <a href="/blog/2013/04/22/helicopter-EMS/" title="Evidence for Mortality Benefit of Helicopter EMS">most recent post</a>, perhaps you'd care to dig into the archive.</p>
+  <p>Now that you've whetted your appetite with the <a href="/blog/2013/06/30/tipping-bucket-raingauge/" title="Tipping Bucket Rain Gauge - Part 1">most recent post</a>, perhaps you'd care to dig into the archive.</p>
 
   <ul class="posts">
     
+      
+    
+      
+        <li>
+  <span class="title"><a href="/blog/2013/04/22/helicopter-EMS/" title="Evidence for Mortality Benefit of Helicopter EMS">Evidence for Mortality Benefit of Helicopter EMS</a></span>
+  <span class="published_on">Published on Monday, April 22, 2013</span>
+</li>
+
       
     
       
@@ -237,11 +266,30 @@
 
       
     
+      
+        <li>
+  <span class="title"><a href="/blog/2011/11/12/first-post/" title="First Post">First Post</a></span>
+  <span class="published_on">Published on Saturday, November 12, 2011</span>
+</li>
+
+      
+    
   </ul>
 </div>
 
 
 </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40401977-1', 'github.com');
+  ga('send', 'pageview');
+
+</script>
 
 
       <div id="push"></div>
@@ -253,4 +301,16 @@
       </p>
     </div>
   </body>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40401977-1', 'github.com');
+    ga('send', 'pageview');
+
+  </script>  
+
 </html>
