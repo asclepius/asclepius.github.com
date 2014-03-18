@@ -16,3 +16,5 @@ Tools I have found useful so far:
 * [MeshLab](http://meshlab.sourceforge.net/)
 * [Slic3r](http://slic3r.org/)
 
+An overview of the creation of our first model will follow shortly.
+

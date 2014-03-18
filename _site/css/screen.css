@@ -98,6 +98,11 @@ a.core-nav:hover {
   padding-top: .8em;
 }
 
+#header h1 {
+font-family: 'Economica', sans-serif; font-weight: 300;
+  font-size: 400%;
+}
+
 #header ul {
   list-style-type: none;
   list-style: none;
@@ -252,7 +257,7 @@ ul.posts li {
 }
 
 ul.posts .title {
-  font-size: 190%;
+  font-size: 130%;
 }
 
 #related-posts .posts {
@@ -300,3 +305,5 @@ td span.event-title {
 td span.event-date {
   font-size: 85%;
 }
+
+
