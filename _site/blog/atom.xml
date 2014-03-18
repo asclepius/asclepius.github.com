@@ -4,13 +4,32 @@
  <title>Paul Kulyk</title>
  <link href="http://asclepius.github.com/blog/atom.xml" rel="self"/>
  <link href="http://asclepius.github.com/"/>
- <updated>2014-03-18T13:04:23-06:00</updated>
+ <updated>2014-03-18T14:05:35-06:00</updated>
  <id>http://asclepius.github.com/</id>
  <author>
    <name>Paul Kulyk</name>
    <email>paul.kulyk@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>3D Printing Lab Setup</title>
+   <link href="http://asclepius.github.com/blog/2014/03/18/Progress-on-3D-Print-Lab/"/>
+   <updated>2014-03-18T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2014/03/18/Progress-on-3D-Print-Lab</id>
+   <content type="html">&lt;p&gt;I have officially moved in to the new office.  The computer is set up and some initial progress has been made.&lt;/p&gt;
+
+&lt;p&gt;Tools I have found useful so far:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.osirix-viewer.com/&quot;&gt;OsiriX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cg.its.tudelft.nl/Projects/DeVIDE&quot;&gt;DeVIDE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://meshlab.sourceforge.net/&quot;&gt;MeshLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://slic3r.org/&quot;&gt;Slic3r&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
  
  <entry>
    <title>Tipping Bucket Rain Gauge - Part 1</title>
@@ -325,34 +344,6 @@ sudo raspi-config&lt;/li&gt;
    <content type="html">&lt;p&gt;I have been furiously updating &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; in anticipation of the trip to the SAEM AGM in Chicago. A new twitter account &lt;a href=&quot;http://www.twitter.com/edus2sim&quot;&gt;edus2sim&lt;/a&gt; has been created specifically for edus2 updates.  The blog and website format have been heavily updated.&lt;/p&gt;
 
 &lt;p&gt;In addition I have started dragging in some of the changes to that site over to this one as well.  Hopefully I can start creating a nice resume with all these things for the upcoming CaRMS showdown.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>edus2 in rural BC - the first working clone</title>
-   <link href="http://asclepius.github.com/blog/2012/02/14/edus2-hits-rural-bc/"/>
-   <updated>2012-02-14T00:00:00-06:00</updated>
-   <id>http://asclepius.github.com/blog/2012/02/14/edus2-hits-rural-bc</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; collaboration strikes again!&lt;/p&gt;
-
-&lt;p&gt;Jel Coward, an MD with a keen interest in open source projects, and his team have created their own working edus2 machine.  This is the first confirmed replication of the project and a significant milestone for is.&lt;/p&gt;
-
-&lt;p&gt;With this we found a few bugs.  He installed it on an earlier version of Ubuntu and had to tweak a few things to work.  None-the-less the system is up and running.&lt;/p&gt;
-
-&lt;p&gt;These changes will be integrated into the git repository under a separate branch in case anyone else is interested in running on an older version of Ubuntu.&lt;/p&gt;
-
-&lt;p&gt;All the hiccups encountered could go away if we had someone with a bit of free time and an interest in the project could package the program for Ubuntu.&lt;/p&gt;
-
-&lt;p&gt;Outstanding &lt;a href=&quot;https://github.com/asclepius/edus2/issues&quot;&gt;issues&lt;/a&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Probe design&lt;/li&gt;
-&lt;li&gt;Ubuntu packages&lt;/li&gt;
-&lt;li&gt;Automatic card setup software&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;p&gt;Anyone interested please contact me, or just go the &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; and get started by forking the project.&lt;/p&gt;
 </content>
  </entry>
  
