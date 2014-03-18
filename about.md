@@ -10,11 +10,14 @@ title: About - Paul Kulyk Dot Com
 
 ### Paul Kulyk, B.Eng., B.Sc. (3-year)
 
-I am a senior medical student at the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  I begin my residency in orthopaedic surgery at the University of Saskatchewan this summer!
+I am a first year resident in Orthopaedic Surgery the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  
 
 My claim to fame in the EM community is the [edus2](http://www.edus2.com) project, an open source emergency department ultrasound simulator for adding bedside ultrasound to existing simulation suites for a minimal cost.
 
-[paul.kulyk@gmail.com](mailto:paul.kulyk@gmail.com)
+
+## Research Interests
+
+I am currently involved in a project creating 3D printed models of bone based on CT data.  The initial goal is to develop an open source system to make these easily available to any department interested in 3D printing models for educational purpose (ie. resident teaching).
 
 ## Presentations
 
@@ -24,6 +27,10 @@ My claim to fame in the EM community is the [edus2](http://www.edus2.com) projec
 ## Abstracts
 
 * Kulyk, P., Olszynski, P. "Emergency Department Ultrasound Simulator". Academic Emergency Medicine. Vol 19. No. 4. S1, pp. S409-410. May 2012.
+
+## Contact
+
+[paul.kulyk@gmail.com](mailto:paul.kulyk@gmail.com)
 
 ## Related sites
 

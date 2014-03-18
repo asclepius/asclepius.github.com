@@ -1,10 +1,14 @@
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700|Economica:400,400italic,700,700italic);
+
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 html, body {
-	height: 100%;
+  height: 100%;
+  color: #839496;
 }
 
 #content-wrapper {
@@ -19,16 +23,15 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: #002b36;
   width: 40em;
   margin-left: auto;
   margin-right: auto;
-	font-family:  Helvetica bold, "Trebuchet MS", Arial sans-serif;
+	font-family: 'Oswald', sans-serif; font-weight: 300;
   font-size-adjust: none;
   font-style: normal;
   font-variant: normal;
   font-weight: normal;
-  color: #333;
 }
 
 p {
@@ -36,11 +39,12 @@ p {
 }
 
 a {
-  color: #168ED4;
+  color: #b58900;
   text-decoration: none;
 }
 
 a:hover {
+  color: #cb4b16;
   text-decoration: underline;
 }
 
@@ -80,13 +84,13 @@ th {
 }
 
 a.core-nav {
-  color: #333;
+  color: #b58900;
   text-decoration: none;
   display: inline-block;
 }
 
 a.core-nav:hover {
-  color: #268ED4;
+    color: #cb4b16;
   text-decoration: none;
 }
 
@@ -96,6 +100,7 @@ a.core-nav:hover {
 
 #header ul {
   list-style-type: none;
+  list-style: none;
 }
 
 #header li {
@@ -135,10 +140,12 @@ a.core-nav:hover {
 }
 
 #content h1 {
-  font-size: 300%;
+font-family: 'Economica', sans-serif; font-weight: 700;
+  font-size: 200%;
 }
 
 #content h2, #content h3 {
+//font-family: 'Oswald', sans-serif; font-weight: 700;
   margin: .5em 0;
 }
 
@@ -152,17 +159,18 @@ a.core-nav:hover {
 }
 
 #content pre {
-  border: 1px solid #ddd;
-  background-color: #eef;
-  padding: 0 .4em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  overflow: auto;
+  background-color: #073642;
+  color: #839496;
+  border: 1pt solid #586e75;
+  padding: 1em;
+  box-shadow: 5pt 5pt 8pt #073642;
 }
 
 #content code {
-  background-color:#EEEEFF;
-  border:1px solid #DDDDDD;
+  background-color: #073642;
+  //background-color: #002b36;
+  //border:1px solid #DDDDDD;
+  border:1px solid  #586e75;
   font-size:95%;
   padding:0 0.2em;
 }
@@ -177,6 +185,7 @@ a.core-nav:hover {
 
 #content ul, #post ul {
   margin-left: 1.5em;
+  list-style: none;
 }
 
 #footer {

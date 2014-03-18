@@ -6,6 +6,7 @@ tags:
   - metar
   - taf
   - weather
+  - hacks
 ---
 
 I've got a ~/bin full of cheap bash hacks I have come up with over the years and I thought this would be a good forum to start sharing them.  Some of the more complex ones I might start commiting to github.   
