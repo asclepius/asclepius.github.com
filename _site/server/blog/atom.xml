@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Paul Kulyk</title>
+ <link href="http://asclepius.github.com/blog/atom.xml" rel="self"/>
+ <link href="http://asclepius.github.com/"/>
+ <updated>2014-03-18T14:51:08-06:00</updated>
+ <id>http://asclepius.github.com/</id>
+ <author>
+   <name>Paul Kulyk</name>
+   <email>paul.kulyk@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>3D Printing Lab Setup</title>
+   <link href="http://asclepius.github.com/blog/2014/03/18/Progress-on-3D-Print-Lab/"/>
+   <updated>2014-03-18T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2014/03/18/Progress-on-3D-Print-Lab</id>
+   <content type="html">&lt;p&gt;I have officially moved in to the new office.  The computer is set up and some initial progress has been made.&lt;/p&gt;
+
+&lt;p&gt;Tools I have found useful so far:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.osirix-viewer.com/&quot;&gt;OsiriX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cg.its.tudelft.nl/Projects/DeVIDE&quot;&gt;DeVIDE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://meshlab.sourceforge.net/&quot;&gt;MeshLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://slic3r.org/&quot;&gt;Slic3r&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Tipping Bucket Rain Gauge - Part 1</title>
+   <link href="http://asclepius.github.com/blog/2013/06/30/tipping-bucket-raingauge/"/>
+   <updated>2013-06-30T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/06/30/tipping-bucket-raingauge</id>
+   <content type="html">&lt;p&gt;I currently have a Raspberry Pi set up to drive my lawn sprinklers using &lt;a href=&quot;http://rayshobby.net/mediawiki/index.php?title=OpenSprinkler_Pi&quot;&gt;an OpenSprinkler Pi&lt;/a&gt; system.
+I wrote some basic scripts to check the weather and decide whether or not it would be a good idea to water the lawn that day.  However, the weather reported does not always match what is experienced for the whole city so I decided to set up my own rain gauge.&lt;/p&gt;
+
+&lt;h3&gt;Parts list&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.thingiverse.com/thing:85045&quot;&gt;Tipping bucket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Rod threaded on one end (something like this &lt;a href=&quot;http://www.hobbyking.com/hobbyking/store/__34929__super_scout_w_camera_1400mm_replacement_aileron_control_rod_set.html&quot;&gt;aileron control rod&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Nuts to fit rod&lt;/li&gt;
+&lt;li&gt;Teflon washers to space things out&lt;/li&gt;
+&lt;li&gt;Rare earth magnet&lt;/li&gt;
+&lt;li&gt;Reed switch&lt;/li&gt;
+&lt;li&gt;Some sort of electronics setup, like and arduino that can compute your rainfall&lt;/li&gt;
+&lt;li&gt;CD spindle (50+ cd count) to house things and keep them dry&lt;/li&gt;
+&lt;li&gt;A funnel&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I got items 2, 3, and 4 at hobbyworld in Saskatoon.  5, 6, and 9 were donated by srw7, a friend from the local hackerspace.  I had an arduino around for 7.  And I found a funnel in the kitchen that hasn't been missed... yet.&lt;/p&gt;
+
+&lt;h3&gt;Step 1 - Print the part&lt;/h3&gt;
+
+&lt;p&gt;Get out your 3D printer and let loose some plastic.  The part is &lt;a href=&quot;http://www.thingiverse.com/thing:85045&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is what it looks like printed.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/59175237@N00/9177600248/&quot; title=&quot;Untitled by _apollo_, on Flickr&quot;&gt;&lt;img src=&quot;http://farm4.staticflickr.com/3807/9177600248_04414d385d.jpg&quot; width=&quot;500&quot; height=&quot;375&quot; alt=&quot;Untitled&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;Step 2 - Epoxy the magnet to the bucket&lt;/h3&gt;
+
+&lt;p&gt;The location depends on where you will get the best read.  You can put it at the top and have it count every tip back and forth.  Or put it at one end and have a back and forth tip count as 1 in your math.&lt;/p&gt;
+
+&lt;h3&gt;Step 3 - Find and modify a container&lt;/h3&gt;
+
+&lt;p&gt;I ended up using an empty 50-CD spindle.  The black spindle itself was drilled and used to mount the bucket and reed switch.  The lid was used for weather proofing with a hole drilled in to mount the funnel through.&lt;/p&gt;
+
+&lt;p&gt;Pic of drilled spindle.&lt;/p&gt;
+
+&lt;p&gt;Pic of drilled lid.&lt;/p&gt;
+
+&lt;h3&gt;Step 4 - Contruct the mechanical parts&lt;/h3&gt;
+
+&lt;p&gt;Bend and cut rod to fit bucket, use teflon washers to space things appropriately.  Use the nuts to fix the rod to the spindle.  Epoxy the funnel in place.&lt;/p&gt;
+
+&lt;p&gt;Pics of above.&lt;/p&gt;
+
+&lt;p&gt;Test with water!&lt;/p&gt;
+
+&lt;p&gt;Video of test.&lt;/p&gt;
+
+&lt;h3&gt;Step 5 - Connect electronics&lt;/h3&gt;
+
+&lt;p&gt;This is a work in progress, currently have an arduino connect to count tips and calculate rainfall.&lt;/p&gt;
+
+&lt;p&gt;The formula used is&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;rainfall = number_of_tips * volume_per_tip / collecting_area_of_funnel
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Evidence for Mortality Benefit of Helicopter EMS</title>
+   <link href="http://asclepius.github.com/blog/2013/04/22/helicopter-EMS/"/>
+   <updated>2013-04-22T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/04/22/helicopter-EMS</id>
+   <content type="html">&lt;p&gt;I heard a couple of guys talking in a coffee shop the other day about STARS.  It got me thinking about how expensive this is and wondering if there is any strong evidence that it makes a difference.&lt;/p&gt;
+
+&lt;p&gt;As I am entering a career in orthopaedic surgery, I was most interested in trauma outcomes.  My medline search was as follows:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;*Emergency Medical Services/ or *Air Ambulances/ (22208)&lt;/li&gt;
+&lt;li&gt;*&quot;Wounds and Injuries&quot;/mo [Mortality] (2132)&lt;/li&gt;
+&lt;li&gt;1 and 2 (148)&lt;/li&gt;
+&lt;li&gt;helicopter.mp. (1933)&lt;/li&gt;
+&lt;li&gt;3 and 4 (30)&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;The search results as of 22 April 2013 are &lt;a href=&quot;/images/citation-2013-04-22.pdf&quot;&gt;here&lt;/a&gt;, this pdf will let UofS users link directly to the articles, others will have to look them up through their own institution's library.&lt;/p&gt;
+
+&lt;p&gt;Galvagno et al concluded that outcomes were improved, however the following JAMA issue had many letters to the editor outlining flaws in how missing data points were dealt with among other study design flaws.  The majority of the articles seem to conclude little mortality benefit though some showed benefit in specific subpopulations.&lt;/p&gt;
+
+&lt;p&gt;The Trauma Professional's &lt;a href=&quot;http://regionstraumapro.com/post/24608428975&quot;&gt;blog&lt;/a&gt; reviews an article that did nto show up on medline (&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/21524205&quot;&gt;Reduced mortality in injured adults transported by helicopter emergency medical services&lt;/a&gt;).  Again the study shows a strictly defined population to benefit.&lt;/p&gt;
+
+&lt;p&gt;Of course, these studies were not done in our unique prairie environment.  STARS is used for transporting hospital to hospital as well as for trauma.  I don't know what the requirements are for the EMS to get to the chopper but I am interested to find out.  Once the LMCC is out of the way, maybe I can do some more reading on the topic.&lt;/p&gt;
+
+&lt;p&gt;If you have articles for or against improved trauma outcomes please comment below.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>CaRMS reflections</title>
+   <link href="http://asclepius.github.com/blog/2013/04/07/CaRMS-Reflections/"/>
+   <updated>2013-04-07T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/04/07/CaRMS-Reflections</id>
+   <content type="html">&lt;p&gt;Having just finished the CaRMS process I had some time to reflect on my successes and mistakes. Here are some of the rules I wish I had followed.&lt;/p&gt;
+
+&lt;h3&gt;Book all your diversity electives in the first block&lt;/h3&gt;
+
+&lt;p&gt;At the University of Saskatchewan we are required to do at least two weeks in at least three different core specialties. ie. 2 weeks of internal medicine or an internal medicine subspecialty + 2 weeks of family medicine + 9 weeks of whatever you are a super gunner for. Unfortunately, not everyone knows they want to be an otolaryngologist or radiation oncologist from day one. Electives should be a way for you to decide what to do, unfortunately the hidden curriculum makes them a lot more than this. In my case I was hoping to get an aerospace medicine elective in my second block which I intended to use as a diversity elective. I was fairly sure I wanted to do emergency medicine at the time. As such I booked my first block as a local 2 weeks EM and 2 weeks ortho then 3 weeks EM at Dalhousie. In the end I did not get the aerospace med elective and I changed my mind from EM to the orthopaedic surgery. As a result, I had to scramble to do more orthopedics electives in my second block to demonstrate my interest and commitment. Additionally, it limited my exposure to other programs which has further implications...&lt;/p&gt;
+
+&lt;h3&gt;Do electives in lots of different places that you might want to go to&lt;/h3&gt;
+
+&lt;p&gt;You can meet the staff and residents at your local program when doing your core rotations or medical or surgical &lt;em&gt;S&lt;/em&gt;electives (with an &quot;S&quot;). Elective are the only opportunity you have to go to other programs and show them how awesome you are at specialty X and how cool of a dude you would be to have around for the next 2-6 years. On our CaRMS tour one program director actually said: &quot;If we haven't had you at our location we will likely rank you behind those who have been here. From our perspective, the devil you know is better than the one you don't.&quot;&lt;/p&gt;
+
+&lt;p&gt;My mistakes so far:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Not knowing from birth I wanted to do orthopaedics.&lt;/li&gt;
+&lt;li&gt;Trying to do fancy things with electives (and not getting my diversities done early).&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;I ended up doing 4 weeks of orthopaedics in Saskatoon, 2 weeks in Calgary, and 2 weeks in Ottawa. I only got to be seen at 3 sites! If I had played the game a little better I could have done my EM and family diversities in first block along with 3 weeks of ortho out of province, then done 2 weeks of ortho in-province on selective, and finished by visiting 3 more sites in my next block for a total of 5 orthopedics programs. This would have exposed me to more staff for reference letters as well as letting me get to know which programs I was most interested in. The CaRMS tour does not give a lot of time for you to get to know a program and they all seem to put on a nice show for potential applicants. Visiting on electives helps you know what you are getting in to.&lt;/p&gt;
+
+&lt;p&gt;This brings me to my next point.&lt;/p&gt;
+
+&lt;h3&gt;Work hard all the time and get a lot of letters&lt;/h3&gt;
+
+&lt;p&gt;Not just from your choice discipline, but from any rotation on where you have impressed the faculty. At your local institution be sure that staff in different departments will talk to each other about your performance so even just working hard might make the difference.&lt;/p&gt;
+
+&lt;p&gt;If you decide on what you will be applying for before your second elective block (which many people do) it doesn't hurt to have generic letters from many source to choose from when applying. If you decide to pursue one of these specialties later you could tell the staff how your time with them influenced them to change careers and ask if they could please write you a discipline-specific letter.&lt;/p&gt;
+
+&lt;p&gt;People do change their mind. More letters is never worse. Ask! Lots! The worst that can happen is they can say no. A caveat here would be to ask from people you think you have impressed.  Also, put the qualifier “strong” in front of letter.  If they can't write you a strong one don't bother, but have the discussion.  CaRMS cover letter stuff doesn't open early (I think there may have been some trouble with the early letter system our year), but you can always drop off a resume with staff and along with a log of some of the memorable experiences you had with them so that when your CaRMS account goes live they will be prepared to submit something.&lt;/p&gt;
+
+&lt;p&gt;The other thing about working hard is that the residents who will be working with you want to know this as well! They don't get to make the program rank order list but it doesn't hurt for them to like you. Also, there is a fine line between being smart in front of a surgeon and stepping on a resident’s toes. Tread cautiously when dropping sweet knowledge that the resident didn't happen to remember at the time.&lt;/p&gt;
+
+&lt;h3&gt;Results&lt;/h3&gt;
+
+&lt;p&gt;I didn't get interviews everywhere in the country this year, but I managed to match to what I wanted: the University of Saskatchewan Orthopaedic Surgery program. I'm very happy with how things ended up, but a lot of CaRMS still seems like a mystery. Set yourself up for success and learn from what others tell you. Comment or questions below.&lt;/p&gt;
+
+&lt;p&gt;Thanks to &lt;a href=&quot;http://boringem.org&quot;&gt;@BoringEM&lt;/a&gt; for reviewing.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>omxplayer + raspbian build</title>
+   <link href="http://asclepius.github.com/blog/2013/02/09/omxplayer-raspbian-build/"/>
+   <updated>2013-02-09T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2013/02/09/omxplayer-raspbian-build</id>
+   <content type="html">&lt;p&gt;I was very impressed by the prompt response I got form the omxplayer team when asking about a windowed output feature.  Then I started trying to build from source and was having a harder time.  The Makefiles are not set up for a standard Raspbian distro.&lt;/p&gt;
+
+&lt;p&gt;Found &lt;a href=&quot;https://github.com/huceke/omxplayer/issues/73#issuecomment-12645858&quot;&gt;this&lt;/a&gt;, ffmpeg has built, now some bugs are popping up in the omxplayer source.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2, CaRMS, etc</title>
+   <link href="http://asclepius.github.com/blog/2012/11/29/edus2-carms-etc/"/>
+   <updated>2012-11-29T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/11/29/edus2-carms-etc</id>
+   <content type="html">&lt;h2&gt;edus2 updates&lt;/h2&gt;
+
+&lt;p&gt;I recently joined &lt;a href=&quot;http://sktechworks.ca&quot;&gt;Saskatoon Techworks&lt;/a&gt; which means... ACCESS TO 3D PRINTING!  CNC MACHINES!  AWESOME!  As well as the vast knowledgebase of the local hacker community.   With a little help from ortho resident/former professional draftsman Blair O I'm hoping to get a slick probe made up for the edus2 machine.&lt;/p&gt;
+
+&lt;p&gt;Follow the &lt;a href=&quot;www.edus2.com&quot;&gt;edus2 blog&lt;/a&gt; for updates on this.&lt;/p&gt;
+
+&lt;h2&gt;CaRMS&lt;/h2&gt;
+
+&lt;p&gt;The package has been delivered.  Next is interviews.  Life can resume as normal for a while and maybe I can study a bit for this upcoming licensing exam.&lt;/p&gt;
+
+&lt;h2&gt;Greystone Heights Makerspace&lt;/h2&gt;
+
+&lt;p&gt;The kids have been enjoying the blinkenlights.  Maybe its time for some robots?  Or webcams hackery?  Any involved kids/parents please come up with some suggestions for what you guys want to do.&lt;/p&gt;
+
+&lt;h2&gt;Deer hunting&lt;/h2&gt;
+
+&lt;p&gt;Success.  Antlers and all.  Venison jerky pending.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspberry Pi Traffic Lights</title>
+   <link href="http://asclepius.github.com/blog/2012/11/19/traffic-lights/"/>
+   <updated>2012-11-19T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/11/19/traffic-lights</id>
+   <content type="html">&lt;p&gt;This is a short tutorial on how to set up the Raspberry Pi to make some lights blink using the GPIO&lt;/p&gt;
+
+&lt;h2&gt;Materials&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Configured RPi&lt;/li&gt;
+&lt;li&gt;Breadboard&lt;/li&gt;
+&lt;li&gt;3 LEDs (red, yellow, green)&lt;/li&gt;
+&lt;li&gt;Three 68 Ohm resistors&lt;/li&gt;
+&lt;li&gt;Jumper wires&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Steps&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Wire the circuit so that the three LEDs are connect on the positive side to 3.3 V then through the negative side they connect to one of the resistors, and from here to the Wiring pins 0, 1, and 2.  The pinout is detailed &lt;a href=&quot;https://projects.drogon.net/raspberry-pi/wiringpi/pins/&quot;&gt;here&lt;/a&gt; the 5V pin is the one in the corner of the header nearest the corner of the board.
+James explains his circuit in &lt;a href=&quot;http://www.youtube.com/watch?v=xcSML0CZ1L0&amp;amp;feature=share&amp;amp;list=UUFg-ZpDBtVhNa_DZg3_ElIg&quot;&gt;this YouTube video&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Open a terminal (if you need help, GOOGLE!)&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We used WiringPi and WiringPi-Python for this.  They are installed on the Pi's at Greystone Heights alrady.  Google them to install on your own system!  You may need the python-dev package as well.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Mrs. Kulyk's Makerspace Pi's should have the code installed, but it is &lt;a href=&quot;/files/traffic.py&quot;&gt;here&lt;/a&gt; as well if needed.  Change to the directory where the file hangs out:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; cd ~/src/traffic
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Run the code as root.  It needs to be root because the GPIO is access via /dev/mem, a special file that has access to all the lowlevel bits and bytes, giving everyone access would be dangerous.  The &quot;sudo&quot; bit means run it as root (or super user).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; sudo python traffic.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;See if you can figure out how to make the lights blink at different speeds.  Can you turn multiple lights on at a time?  Can you turn them into christmas lights instead of traffic lights?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;Tips&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ctrl-C will stop the program.&lt;/li&gt;
+&lt;li&gt;Make sure you shutdown the pi properly or you could fry the sd card. (Or corrupt the filesystem). Click the button in the gui to shutdown, or try &quot;sudo shutdown -h now&quot; at the command line.&lt;/li&gt;
+&lt;li&gt;A USB key (you will need a USB hub so you can use keyboard mouse and usb stick at the same time) will allow you to take your code home!&lt;/li&gt;
+&lt;/ul&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspbmc Install Notes</title>
+   <link href="http://asclepius.github.com/blog/2012/09/09/raspbmc-installation/"/>
+   <updated>2012-09-09T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/09/09/raspbmc-installation</id>
+   <content type="html">&lt;p&gt;This is a post detailing the raspbmc installation and a few tweaks so that my lovely wife can set up a few more at her school.&lt;/p&gt;
+
+&lt;h2&gt;Equipment Used&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Model B&lt;/li&gt;
+&lt;li&gt;8 GB class 10 microSD card with standard SD adapter&lt;/li&gt;
+&lt;li&gt;USB-based microSD card reader to write the image to&lt;/li&gt;
+&lt;li&gt;USB keyboard and mouse&lt;/li&gt;
+&lt;li&gt;HDMI cable&lt;/li&gt;
+&lt;li&gt;MicroUSB cable and wall power source&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go &lt;a href=&quot;http://www.raspbmc.com/wiki/user/os-x-linux-installation/&quot;&gt;here&lt;/a&gt; and do what it says!&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Essentially the important part is the following (&lt;strong&gt;BE SURE OF THE DISK YOU SELECT, OR FACE THE CONSEQUENCES OF DESTROYING YOUR HARDDRIVE&lt;/strong&gt;):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  curl -O http://svn.stmlabs.com/svn/raspbmc/testing/installers/python/install.py
+  chmod +x install.py
+  sudo python install.py
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I have a collection of MPEG-2 files so I purchased the additional license as detailed on the &lt;a href=&quot;http://www.raspberrypi.com/mpeg-2-license-key/&quot;&gt;raspberry pi site&lt;/a&gt;.  Edit /boot/config and add your mpeg key there.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;I could not get any deinterlacing to work on the pi so I decided to set the output resolution to 1080i.  For some reason Raspbmc would not let me do this, to solve it I edited the config.txt file to manually set the resolution.  Details on this file can be found &lt;a href=&quot;http://elinux.org/RPi_config.txt&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;h2&gt;Hardware setup&lt;/h2&gt;
+
+&lt;p&gt;I have a TV with a USB port for playing files from a disk.  Conveniently, this port supplies enough power to run the Pi!  So no power source is needed just a micro USB cable.&lt;/p&gt;
+
+&lt;p&gt;Additionally I have samba storage on the network and use this.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Raspberry Pi Install Details</title>
+   <link href="http://asclepius.github.com/blog/2012/09/08/raspberry-pi-install/"/>
+   <updated>2012-09-08T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/09/08/raspberry-pi-install</id>
+   <content type="html">&lt;p&gt;This is a post detailing how we installed the Raspberry Pi software using Mac OS X Mountain Lion.
+The raspberry pi site has an excellent quick-start guide [http://www.raspberrypi.org/quick-start-guide].&lt;/p&gt;
+
+&lt;h2&gt;Equipment Used&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi Model B&lt;/li&gt;
+&lt;li&gt;8 GB class 10 microSD card with standard SD adapter&lt;/li&gt;
+&lt;li&gt;USB-based microSD card reader to write the image to&lt;/li&gt;
+&lt;li&gt;USB keyboard and mouse&lt;/li&gt;
+&lt;li&gt;HDMI cable&lt;/li&gt;
+&lt;li&gt;MicroUSB cable and wall power source&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Download an install image, we used Raspbian &quot;wheezy&quot; from &lt;a href=&quot;http://www.raspberrypi.org/downloads&quot;&gt;here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Various options for loading the SD card are given &lt;a href=&quot;http://elinux.org/RPi_Easy_SD_Card_Setup&quot;&gt;here&lt;/a&gt;.  We unzipped the imaged and used dd to install it as they describe for Mac OS X.&lt;/li&gt;
+&lt;li&gt;Put the card into the Pi&lt;/li&gt;
+&lt;li&gt;Connect HDMI, power, ethernet, keyboard, and mouse&lt;/li&gt;
+&lt;li&gt;Plug it in, HDMI did not work initially.&lt;/li&gt;
+&lt;li&gt;SSH into the box with username: pi, password: raspberry (for raspbian wheezy)&lt;/li&gt;
+&lt;li&gt;Run the following command:
+sudo raspi-config&lt;/li&gt;
+&lt;li&gt;In raspi-config you can set up all the options as you like.  Change to a US keyboard layout for US/Canada. (I select generic 105, then &quot;Other&quot; then &quot;English (US)&quot;.  If you have a big SD card make sure you expand the file system to utilize this.&lt;/li&gt;
+&lt;li&gt;After the ssh setup the HDMI worked fine.  Not sure why it did not work initially.&lt;/li&gt;
+&lt;/ol&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>edus2 website updates</title>
+   <link href="http://asclepius.github.com/blog/2012/04/28/vanity-header-website-updates/"/>
+   <updated>2012-04-28T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2012/04/28/vanity-header-website-updates</id>
+   <content type="html">&lt;p&gt;I have been furiously updating &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; in anticipation of the trip to the SAEM AGM in Chicago. A new twitter account &lt;a href=&quot;http://www.twitter.com/edus2sim&quot;&gt;edus2sim&lt;/a&gt; has been created specifically for edus2 updates.  The blog and website format have been heavily updated.&lt;/p&gt;
+
+&lt;p&gt;In addition I have started dragging in some of the changes to that site over to this one as well.  Hopefully I can start creating a nice resume with all these things for the upcoming CaRMS showdown.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ 
+</feed>
