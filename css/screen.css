@@ -225,8 +225,8 @@ font-family: 'Economica', sans-serif; font-weight: 700;
 #arenas-of-awesome li {
   list-style-type: none;
   float: left;
-  margin-left: 104px;
-  font-size: 72px;
+  margin-left: 80px;
+  font-size: 60px;
 }
 
 #arenas-of-awesome li:first-child {
