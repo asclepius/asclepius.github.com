@@ -9,7 +9,7 @@ The **content** of the site (i.e., blog posts and page content) is licensed unde
 
 The **icons** are from the [IcoMoon icon set](http://icomoon.io/) and are licensed as described at [http://icomoon.io/#icons#license](http://icomoon.io/#icons#license).
 
-The **structure, design, and layout** of the site are licensed under the [MIT License](http://opensource.org/licenses/MIT).
+The **structure, design, and layout** of the site are licensed under the [MIT License](http://opensource.org/licenses/MIT).  My site format is derived from [jasonrudolph.com](https://github.com/jasonrudolph/jasonrudolph.com)
 
 # Dependencies
 
