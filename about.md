@@ -8,7 +8,7 @@ title: About - Paul Kulyk Dot Com
 
 # About
 
-### Paul Kulyk, B.Eng., B.Sc. (3-year)
+### Paul Kulyk, MD, BEng, BSc (3-year)
 
 I am a first year resident in Orthopaedic Surgery the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  
 
@@ -34,6 +34,5 @@ I am currently involved in a project creating 3D printed models of bone based on
 
 ## Related sites
 
-### [University of Saskatchewan FOAM Collaborative](https://wiki.usask.ca/display/FOAMusask/USask+FOAM+Collaborative)
-
-A group of bloggers (mostly in the local EM community) with an interested in Free Open Access MedEd [FOAM](http://lifeinthefastlane.com/foam/).
+* [edus2.com](http://www.edus2.com) - The Emergency Department Ultrasound Simulator
+* [University of Saskatchewan FOAM Collaborative](https://wiki.usask.ca/display/FOAMusask/USask+FOAM+Collaborative) - A group of bloggers (mostly in the local EM community) with an interested in Free Open Access MedEd [FOAM](http://lifeinthefastlane.com/foam/).
