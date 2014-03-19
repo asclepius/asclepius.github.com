@@ -1,7 +1,7 @@
 ---
 permalink: about.html
 layout: default
-title: About - Paul Kulyk Dot Com
+title: About - Paul Kulyk
 ---
 
 <img style="float:right" src="{{ site.url }}/images/kulyk_floating10.png" >
@@ -10,7 +10,7 @@ title: About - Paul Kulyk Dot Com
 
 ### Paul Kulyk, MD, BEng, BSc (3-year)
 
-I am a first year resident in Orthopaedic Surgery the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  
+I am a first year resident in Orthopaedic Surgery at the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  
 
 My claim to fame in the EM community is the [edus2](http://www.edus2.com) project, an open source emergency department ultrasound simulator for adding bedside ultrasound to existing simulation suites for a minimal cost.
 
