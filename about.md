@@ -30,7 +30,7 @@ I am currently involved in a project creating 3D printed models of bone based on
 
 ## Contact
 
-[paul.kulyk@gmail.com](mailto:paul.kulyk@gmail.com)
+[paul.kulyk@gmail.com](mailto:paul.kulyk@gmail.com) - no medical questions.
 
 ## Related sites
 
