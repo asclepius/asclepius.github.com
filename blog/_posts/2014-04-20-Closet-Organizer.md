@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Closet Organizer - Bill of Materials Using [OpenSCAD](http://www.openscad.org)
+title: Closet Organizer - Bill of Materials Using OpenSCAD
 tags:
   - OpenSCAD
   - Carpentry
