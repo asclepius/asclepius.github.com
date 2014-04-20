@@ -12,13 +12,14 @@ tags:
 We are in the process of some renovations and our closets were looking pretty shabby.
 I designed a new [closet organizer](https://github.com/asclepius/closet_organizer) that should allow us to get a little more out of the space we have.
 
-![Closet Organizer](https://raw.githubusercontent.com/asclepius/closet_organizer/master/output.png)
+![](https://raw.githubusercontent.com/asclepius/closet_organizer/master/output.png)
+
 
 ## Bill of Material in [OpenSCAD](http://www.openscad.org)
 
-The [OpenSCAD](http://www.openscad.org) portion of thigns was pretty straightforward.  I added a little functionality by including a bill of material utility. 
+The [OpenSCAD](http://www.openscad.org) portion of things was pretty straightforward.  I added a little functionality by including a bill of material utility. 
 
-Used a modular design so that each shelf was instatiated by itself.  I then added an echo statement to the shelf module to make it spit out its dimensions:
+Used a modular design so that each shelf was instantiated by itself.  I then added an echo statement to the shelf module to make it spit out its dimensions:
 
     module top_shelf()
     {
@@ -26,7 +27,7 @@ Used a modular design so that each shelf was instatiated by itself.  I then adde
       echo(str("Top shelf: ",sh_depth,units,"x ",cl_rct_ln,units,"x ", sh_width, units));
     };
 
-I then wrote a [script](https://github.com/asclepius/closet_organizer/blob/master/bom.sh) to parse the echo'd text and tally things up with uniq.
+I then wrote a [script](https://github.com/asclepius/closet_organizer/blob/master/bom.sh) to parse the echoed text and tally things up with uniq.
 
 The end results for the BOM is:
 
