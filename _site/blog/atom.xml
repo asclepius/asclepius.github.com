@@ -4,13 +4,55 @@
  <title>Paul Kulyk</title>
  <link href="http://asclepius.github.com/blog/atom.xml" rel="self"/>
  <link href="http://asclepius.github.com/"/>
- <updated>2014-03-18T18:58:23-06:00</updated>
+ <updated>2014-04-20T17:38:32-06:00</updated>
  <id>http://asclepius.github.com/</id>
  <author>
    <name>Paul Kulyk</name>
    <email>paul.kulyk@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Closet Organizer - Bill of Materials Using OpenSCAD</title>
+   <link href="http://asclepius.github.com/blog/2014/04/20/Closet-Organizer/"/>
+   <updated>2014-04-20T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/blog/2014/04/20/Closet-Organizer</id>
+   <content type="html">&lt;p&gt;We are in the process of some renovations and our closets were looking pretty shabby.
+I designed a new &lt;a href=&quot;https://github.com/asclepius/closet_organizer&quot;&gt;closet organizer&lt;/a&gt; that should allow us to get a little more out of the space we have.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/asclepius/closet_organizer/master/output.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2&gt;Bill of Material in &lt;a href=&quot;http://www.openscad.org&quot;&gt;OpenSCAD&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.openscad.org&quot;&gt;OpenSCAD&lt;/a&gt; portion of things was pretty straightforward.  I added a little functionality by including a bill of material utility.&lt;/p&gt;
+
+&lt;p&gt;Used a modular design so that each shelf was instantiated by itself.  I then added an echo statement to the shelf module to make it spit out its dimensions:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;module top_shelf()
+{
+  translate([0,0,sh_tot_height]) cube([sh_depth, cl_rct_ln, sh_width]);
+  echo(str(&quot;Top shelf: &quot;,sh_depth,units,&quot;x &quot;,cl_rct_ln,units,&quot;x &quot;, sh_width, units));
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I then wrote a &lt;a href=&quot;https://github.com/asclepius/closet_organizer/blob/master/bom.sh&quot;&gt;script&lt;/a&gt; to parse the echoed text and tally things up with uniq.&lt;/p&gt;
+
+&lt;p&gt;The end results for the BOM is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./bom.sh 
+   8 Rod bracket: 12 inches x 4 inches x 0.625 inches 
+   4 Rod: 1 inches x 30.875 inches 
+  10 Shelf bracket: 12 inches x 2 inches x 0.625 inches 
+   2 Shelf upright: 12 inches x 80 inches x 0.625 inches 
+   5 Shelf: 12 inches x 24 inches x 0.625 inches 
+   1 Top shelf: 12 inches x 87 inches x 0.625 inches 
+Total length of 16 inch wood
+387
+Total length of rod
+155.500
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+ </entry>
  
  <entry>
    <title>3D Printing Lab Setup</title>
@@ -100,36 +142,6 @@ I wrote some basic scripts to check the weather and decide whether or not it wou
  </entry>
  
  <entry>
-   <title>Evidence for Mortality Benefit of Helicopter EMS</title>
-   <link href="http://asclepius.github.com/blog/2013/04/22/helicopter-EMS/"/>
-   <updated>2013-04-22T00:00:00-06:00</updated>
-   <id>http://asclepius.github.com/blog/2013/04/22/helicopter-EMS</id>
-   <content type="html">&lt;p&gt;I heard a couple of guys talking in a coffee shop the other day about STARS.  It got me thinking about how expensive this is and wondering if there is any strong evidence that it makes a difference.&lt;/p&gt;
-
-&lt;p&gt;As I am entering a career in orthopaedic surgery, I was most interested in trauma outcomes.  My medline search was as follows:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;*Emergency Medical Services/ or *Air Ambulances/ (22208)&lt;/li&gt;
-&lt;li&gt;*&quot;Wounds and Injuries&quot;/mo [Mortality] (2132)&lt;/li&gt;
-&lt;li&gt;1 and 2 (148)&lt;/li&gt;
-&lt;li&gt;helicopter.mp. (1933)&lt;/li&gt;
-&lt;li&gt;3 and 4 (30)&lt;/li&gt;
-&lt;/ol&gt;
-
-
-&lt;p&gt;The search results as of 22 April 2013 are &lt;a href=&quot;/images/citation-2013-04-22.pdf&quot;&gt;here&lt;/a&gt;, this pdf will let UofS users link directly to the articles, others will have to look them up through their own institution's library.&lt;/p&gt;
-
-&lt;p&gt;Galvagno et al concluded that outcomes were improved, however the following JAMA issue had many letters to the editor outlining flaws in how missing data points were dealt with among other study design flaws.  The majority of the articles seem to conclude little mortality benefit though some showed benefit in specific subpopulations.&lt;/p&gt;
-
-&lt;p&gt;The Trauma Professional's &lt;a href=&quot;http://regionstraumapro.com/post/24608428975&quot;&gt;blog&lt;/a&gt; reviews an article that did nto show up on medline (&lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pubmed/21524205&quot;&gt;Reduced mortality in injured adults transported by helicopter emergency medical services&lt;/a&gt;).  Again the study shows a strictly defined population to benefit.&lt;/p&gt;
-
-&lt;p&gt;Of course, these studies were not done in our unique prairie environment.  STARS is used for transporting hospital to hospital as well as for trauma.  I don't know what the requirements are for the EMS to get to the chopper but I am interested to find out.  Once the LMCC is out of the way, maybe I can do some more reading on the topic.&lt;/p&gt;
-
-&lt;p&gt;If you have articles for or against improved trauma outcomes please comment below.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
    <title>CaRMS reflections</title>
    <link href="http://asclepius.github.com/blog/2013/04/07/CaRMS-Reflections/"/>
    <updated>2013-04-07T00:00:00-06:00</updated>
@@ -182,6 +194,15 @@ I wrote some basic scripts to check the weather and decide whether or not it wou
    <content type="html">&lt;p&gt;I was very impressed by the prompt response I got form the omxplayer team when asking about a windowed output feature.  Then I started trying to build from source and was having a harder time.  The Makefiles are not set up for a standard Raspbian distro.&lt;/p&gt;
 
 &lt;p&gt;Found &lt;a href=&quot;https://github.com/huceke/omxplayer/issues/73#issuecomment-12645858&quot;&gt;this&lt;/a&gt;, ffmpeg has built, now some bugs are popping up in the omxplayer source.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Crossfit Begins</title>
+   <link href="http://asclepius.github.com/Crossfit/2012/12/05/Crossfit/"/>
+   <updated>2012-12-05T00:00:00-06:00</updated>
+   <id>http://asclepius.github.com/Crossfit/2012/12/05/Crossfit</id>
+   <content type="html">&lt;p&gt;We finally started Crossfit (thanks for the tip 5 years ago BathMatt).&lt;/p&gt;
 </content>
  </entry>
  
@@ -335,17 +356,6 @@ sudo raspi-config&lt;/li&gt;
 &lt;li&gt;After the ssh setup the HDMI worked fine.  Not sure why it did not work initially.&lt;/li&gt;
 &lt;/ol&gt;
 
-</content>
- </entry>
- 
- <entry>
-   <title>edus2 website updates</title>
-   <link href="http://asclepius.github.com/blog/2012/04/28/vanity-header-website-updates/"/>
-   <updated>2012-04-28T00:00:00-06:00</updated>
-   <id>http://asclepius.github.com/blog/2012/04/28/vanity-header-website-updates</id>
-   <content type="html">&lt;p&gt;I have been furiously updating &lt;a href=&quot;http://www.edus2.com&quot;&gt;edus2&lt;/a&gt; in anticipation of the trip to the SAEM AGM in Chicago. A new twitter account &lt;a href=&quot;http://www.twitter.com/edus2sim&quot;&gt;edus2sim&lt;/a&gt; has been created specifically for edus2 updates.  The blog and website format have been heavily updated.&lt;/p&gt;
-
-&lt;p&gt;In addition I have started dragging in some of the changes to that site over to this one as well.  Hopefully I can start creating a nice resume with all these things for the upcoming CaRMS showdown.&lt;/p&gt;
 </content>
  </entry>
  

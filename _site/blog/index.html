@@ -55,46 +55,73 @@
 
 
 <div id="post">
-  <h1><a href="/blog/2014/03/18/Progress-on-3D-Print-Lab/" title="3D Printing Lab Setup">3D Printing Lab Setup</a></h1>
+  <h1><a href="/blog/2014/04/20/Closet-Organizer/" title="Closet Organizer - Bill of Materials Using OpenSCAD">Closet Organizer - Bill of Materials Using OpenSCAD</a></h1>
 
   
     <span class="published_on">
-      Published on Tuesday, March 18, 2014
+      Published on Sunday, April 20, 2014
 
       
         in
         
           
-          <a href="/tag/orthopaedics" class="tag">orthopaedics</a>, 
+          <a href="/tag/OpenSCAD" class="tag">openscad</a>, 
         
           
-          <a href="/tag/research" class="tag">research</a>, 
+          <a href="/tag/Carpentry" class="tag">carpentry</a>, 
+        
+          
+          <a href="/tag/DIY" class="tag">diy</a>, 
+        
+          
+          <a href="/tag/Closet organizer" class="tag">closet organizer</a>, 
         
            and 
-          <a href="/tag/3D printer" class="tag">3d printer</a>
+          <a href="/tag/Bash Hacks" class="tag">bash hacks</a>
         
       
      </span>
    
 
-  <p>I have officially moved in to the new office.  The computer is set up and some initial progress has been made.</p>
+  <p>We are in the process of some renovations and our closets were looking pretty shabby.
+I designed a new <a href="https://github.com/asclepius/closet_organizer">closet organizer</a> that should allow us to get a little more out of the space we have.</p>
 
-<p>Tools I have found useful so far:</p>
+<p><img src="https://raw.githubusercontent.com/asclepius/closet_organizer/master/output.png" alt="" /></p>
 
-<ul>
-<li><a href="http://www.osirix-viewer.com/">OsiriX</a></li>
-<li><a href="http://www.cg.its.tudelft.nl/Projects/DeVIDE">DeVIDE</a></li>
-<li><a href="http://meshlab.sourceforge.net/">MeshLab</a></li>
-<li><a href="http://slic3r.org/">Slic3r</a></li>
-</ul>
+<h2>Bill of Material in <a href="http://www.openscad.org">OpenSCAD</a></h2>
 
+<p>The <a href="http://www.openscad.org">OpenSCAD</a> portion of things was pretty straightforward.  I added a little functionality by including a bill of material utility.</p>
 
-<p>An overview of the creation of our first model will follow shortly.</p>
+<p>Used a modular design so that each shelf was instantiated by itself.  I then added an echo statement to the shelf module to make it spit out its dimensions:</p>
+
+<pre><code>module top_shelf()
+{
+  translate([0,0,sh_tot_height]) cube([sh_depth, cl_rct_ln, sh_width]);
+  echo(str("Top shelf: ",sh_depth,units,"x ",cl_rct_ln,units,"x ", sh_width, units));
+};
+</code></pre>
+
+<p>I then wrote a <a href="https://github.com/asclepius/closet_organizer/blob/master/bom.sh">script</a> to parse the echoed text and tally things up with uniq.</p>
+
+<p>The end results for the BOM is:</p>
+
+<pre><code>./bom.sh 
+   8 Rod bracket: 12 inches x 4 inches x 0.625 inches 
+   4 Rod: 1 inches x 30.875 inches 
+  10 Shelf bracket: 12 inches x 2 inches x 0.625 inches 
+   2 Shelf upright: 12 inches x 80 inches x 0.625 inches 
+   5 Shelf: 12 inches x 24 inches x 0.625 inches 
+   1 Top shelf: 12 inches x 87 inches x 0.625 inches 
+Total length of 16 inch wood
+387
+Total length of rod
+155.500
+</code></pre>
 
 
   <div class="post-footer">
-    <a href="/blog/2014/03/18/Progress-on-3D-Print-Lab/" title="3D Printing Lab Setup">permalink</a> |
-    <a href="/blog/2014/03/18/Progress-on-3D-Print-Lab/#comments" title="3D Printing Lab Setup -- Comments">comments</a> | 
+    <a href="/blog/2014/04/20/Closet-Organizer/" title="Closet Organizer - Bill of Materials Using OpenSCAD">permalink</a> |
+    <a href="/blog/2014/04/20/Closet-Organizer/#comments" title="Closet Organizer - Bill of Materials Using OpenSCAD -- Comments">comments</a> | 
     <a href="http://feeds.feedburner.com/paulkulyk" title="Paul Kulyk - Atom/RSS Feed">subscribe</a>
   </div>
 </div>
@@ -102,7 +129,7 @@
 <div id="archive">
   <h1><a name="archive" href="#archive" title="Blog Archive">Archive</a></h1>
 
-  <p>Now that you've whetted your appetite with the <a href="/blog/2014/03/18/Progress-on-3D-Print-Lab/" title="3D Printing Lab Setup">most recent post</a>, perhaps you'd care to dig into the archive.</p>
+  <p>Now that you've whetted your appetite with the <a href="/blog/2014/04/20/Closet-Organizer/" title="Closet Organizer - Bill of Materials Using OpenSCAD">most recent post</a>, perhaps you'd care to dig into the archive.</p>
 
   <ul class="posts">
     
@@ -110,16 +137,16 @@
     
       
         <li>
-  <span class="title"><a href="/blog/2013/06/30/tipping-bucket-raingauge/" title="Tipping Bucket Rain Gauge - Part 1">Tipping Bucket Rain Gauge - Part 1</a></span>
-  <span class="published_on">Published on Sunday, June 30, 2013</span>
+  <span class="title"><a href="/blog/2014/03/18/Progress-on-3D-Print-Lab/" title="3D Printing Lab Setup">3D Printing Lab Setup</a></span>
+  <span class="published_on">Published on Tuesday, March 18, 2014</span>
 </li>
 
       
     
       
         <li>
-  <span class="title"><a href="/blog/2013/04/22/helicopter-EMS/" title="Evidence for Mortality Benefit of Helicopter EMS">Evidence for Mortality Benefit of Helicopter EMS</a></span>
-  <span class="published_on">Published on Monday, April 22, 2013</span>
+  <span class="title"><a href="/blog/2013/06/30/tipping-bucket-raingauge/" title="Tipping Bucket Rain Gauge - Part 1">Tipping Bucket Rain Gauge - Part 1</a></span>
+  <span class="published_on">Published on Sunday, June 30, 2013</span>
 </li>
 
       
@@ -136,6 +163,14 @@
         <li>
   <span class="title"><a href="/blog/2013/02/09/omxplayer-raspbian-build/" title="omxplayer + raspbian build">omxplayer + raspbian build</a></span>
   <span class="published_on">Published on Saturday, February 09, 2013</span>
+</li>
+
+      
+    
+      
+        <li>
+  <span class="title"><a href="/Crossfit/2012/12/05/Crossfit/" title="Crossfit Begins">Crossfit Begins</a></span>
+  <span class="published_on">Published on Wednesday, December 05, 2012</span>
 </li>
 
       
