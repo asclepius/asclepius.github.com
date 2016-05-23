@@ -10,7 +10,7 @@ title: About - Paul Kulyk
 
 ### Paul Kulyk, MD, BEng, BSc (3-year)
 
-I am a second-year resident in Orthopaedic Surgery at the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  
+I am a third-year resident in Orthopaedic Surgery at the University of Saskatchewan.  Previously, I worked in the telecommunications industry as a computer engineer.  
 
 As a medical student I co-founded the [edus2](http://www.edus2.com) project, an open source emergency department ultrasound simulator for adding bedside ultrasound to existing simulation suites for a minimal cost.
 
