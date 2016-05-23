@@ -21,7 +21,7 @@ Tools that need exploring:
 
 I just went through a [tutorial video](https://www.youtube.com/watch?v=MKLWzD0PiIc)
 
-<iframe width="1280" height="720" src="//www.youtube.com/embed/MKLWzD0PiIc?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="75%" src="//www.youtube.com/embed/MKLWzD0PiIc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Seems very promising.  A bit of a learning curve, but a well laid out tutorial could quickly guide someone through the process.
 
