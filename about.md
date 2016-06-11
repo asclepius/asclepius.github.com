@@ -17,7 +17,7 @@ As a medical student I co-founded the [edus2](http://www.edus2.com) project, an 
 
 ## Research Interests
 
-I am currently involved in a project creating 3D printed models of bone based on CT data.  The initial goal is to develop an open source system to make these easily available to any department interested in 3D printing models for educational purpose (ie. resident teaching).
+I am currently involved in a project creating 3D printed models of bone based on CT data.  The initial goal is to develop an open source system to make these easily available to any department interested in 3D printing models for educational purpose (ie. resident teaching).  I am leaving this fall to complete a Master of Science in biomedical engineering before completing my residency.
 
 ## Presentations
 
