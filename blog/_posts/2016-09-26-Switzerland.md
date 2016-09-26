@@ -7,3 +7,4 @@ tags:
 
 We have moved to Bern.  This is a test, some photos will be published here.
 
+![](images/rosengarten-sunset-2016-09-16.jpg)
