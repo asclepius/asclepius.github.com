@@ -1,9 +1,0 @@
----
-layout: post
-title: Crossfit Begins
-categories:
-  - Crossfit
----
-
-We finally started Crossfit (thanks for the tip 5 years ago BathMatt).
-
