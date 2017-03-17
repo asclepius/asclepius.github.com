@@ -32,6 +32,12 @@ I am currently involved in a project creating 3D printed models of bone based on
 
 [paul.kulyk@gmail.com](mailto:paul.kulyk@gmail.com) - no medical questions.
 
+## GPG Key
+
+[0x853D53845BC8A926](853D53845BC8A926.asc)
+
+Key fingerprint = DEE0 E80E 0B70 0CFA 30F7  92E7 853D 5384 5BC8 A926
+
 ## Related sites
 
 * [edus2.com](http://www.edus2.com) - The Emergency Department Ultrasound Simulator
