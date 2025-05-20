@@ -6,10 +6,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>Paul Kulyk</title>
- <link href="http://asclepius.github.com/blog/atom.xml" rel="self"/>
- <link href="http://asclepius.github.com/"/>
+ <link href="http://asclepius.github.io/blog/atom.xml" rel="self"/>
+ <link href="http://asclepius.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://asclepius.github.com/</id>
+ <id>http://asclepius.github.io/</id>
  <author>
    <name>Paul Kulyk</name>
    <email>paul.kulyk@gmail.com</email>
@@ -18,9 +18,9 @@ layout: nil
  {% for post in site.posts limit:10 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://asclepius.github.com{{ post.url }}"/>
+   <link href="http://asclepius.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://asclepius.github.com{{ post.id }}</id>
+   <id>http://asclepius.github.io{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

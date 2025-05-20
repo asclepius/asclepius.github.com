@@ -1,7 +1,7 @@
 # About
 
-This is the data for Paul Kulyk's [blog](http://asclepius.github.com/blog "http://asclepius.github.com/blog") and [website](http://asclepius.github.com "http://asclepius.github.com").
-I use [Jekyll](http://github.com/mojombo/jekyll) to transform the content of this repo into the static site hosted at [asclepius.github.com](http://asclepius.github.com "http://asclepius.github.com").
+This is the data for Paul Kulyk's [blog](http://asclepius.github.io/blog "http://asclepius.github.io/blog") and [website](http://asclepius.github.io "http://asclepius.github.io").
+I use [Jekyll](http://github.com/mojombo/jekyll) to transform the content of this repo into the static site hosted at [asclepius.github.io](http://asclepius.github.io "http://asclepius.github.io").
 
 # License
 

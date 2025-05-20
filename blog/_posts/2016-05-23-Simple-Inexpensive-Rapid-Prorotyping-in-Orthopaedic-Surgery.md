@@ -7,4 +7,4 @@ tags:
   - 3D printer
 ---
 
-Started work on a [wiki](https://github.com/asclepius/asclepius.github.com/wiki/3D-Printing) to give an overview of the process.  Covers getting imaging to cleaning up the print.
+Started work on a [wiki](https://github.com/asclepius/asclepius.github.io/wiki/3D-Printing) to give an overview of the process.  Covers getting imaging to cleaning up the print.
